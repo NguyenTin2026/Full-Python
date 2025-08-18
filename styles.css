@@ -1,0 +1,618 @@
+
+/*#text {
+  /*  color: blue; /* Màu xanh cho text */
+  /*  font-size: 24px; /* Kích thước font */
+  /*  font-weight: bold; /* In đậm */
+  /*  text-align: center; /* Căn giữa */
+  /*  margin-top: 50px; /* Khoảng cách từ trên */
+
+
+ /* div {
+width: 50mm;
+height: 5cm;
+} */
+
+/* #box1, #box2, #box3 {
+    width: 30%;
+    height: 64px;
+    margin: 10px;
+    display: inline-block;
+} */
+
+/* Write CSS code here */
+/*div {
+  border: 4px solid red;
+}
+
+div {
+  border-width: 4px;
+  border-style: solid;
+  border-color: red;
+} */
+ 
+/*div, p {
+  border-top-style:
+  border-right-style:
+  border-left-style:
+  border-bottom-style:
+  border-top-color:
+  border-right-color:
+  border-left-color:
+  border-bottom-color:
+  border-top-width:
+  border-right-width:
+  border-left-width:
+  border-bottom-width:
+  padding-top:
+  paddind-right:
+  padding-left:
+  padding-bottom:
+} */
+
+/*.container {
+  border-left-style:
+  border-left-color:
+  border-left-width:
+}
+
+.container {
+  border-left: 5px solid blue;
+} */
+
+
+/*<!DOCTYPE html>
+<html>
+<head> 
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div>
+    <p>
+         I love CSS!
+    </p>
+   </div>
+</body>
+</html> */
+
+/*div {
+  background-color: #333;
+  margin: 16px;
+}
+
+p {
+  color: white;
+} */
+
+/*div {
+  box-sizing: border-box;
+} */
+
+/*div {
+box-shadow:10px 10px 8px 2px cyan;   #horizontal-offset vertical-offset blur-radius spread-radius color;
+} */
+
+/* div {
+border-radius: số px; 
+border-radius: 10px 10px 8px 2px;    #top-left top-right bottom-right bottom-left;
+
+/* color: rgb(255, 0, 0); 
+   color: #ff0000;
+   color: hsl(0, 100%, 50%);
+   color: rgba(255, 0, 0, 0.5);
+   color: hsla(0, 100%, 50%, 0.5);
+   */
+
+/* div {
+text-align: center;   #ngoài ra còn có: left, right, justify;
+*/
+
+/* div {
+text-decoration: underline; #ngoài ra còn có: overline, line-through, none;
+text-decoration: giá trị của text-decoration + color + giá trị của border-style;
+text-decoration: giá trị của text-decoration + giá trị của border-style + color;
+*/
+
+/* div {
+text-shadow: horizontal-offset vertical-offset blur-radius color;
+*/
+
+/* .text {
+font-family: Arial, Helvetica, sans-serif;
+font-family: 'Times New Roman', Times, serif;
+font-family: 'Courier New', Courier, monospace;
+font-family: 'Lucida Console', 'Courier New', monospace;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+*/
+
+/* div is vertical layout by default and the most straight forward missing feature is placing content in a horizontal layout.
+*/
+
+/* div {
+display: block;
+display: inline;
+display: inline-block;
+display: flex;
+display: grid;
+display: none;
+display: table;
+display: table-cell;
+display: table-row;
+display: table-column;
+display: table-column-group;
+display: table-row-group;
+display: table-header-group;
+display: table-footer-group;
+display: table-caption;
+display: contents;
+display: list-item;
+display: initial;
+display: inherit;
+display: sticky;
+*/
+
+/* div {
+  flex-direction: row;  #ngoài ra còn có  row-reverse, column, column-reverse
+} */
+
+/* div {
+  justify-content: center; #ngoài ra còn có: flex-start, flex-end, space-between, space-around, space-evenly
+} */
+
+/* .container {
+  align-items:center; #ngoài ra còn có flex-start, flex-end, space-between, space-around, space-evenly, stretch
+} */
+
+
+/* Tổng kết
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/*Bài tập bonus
+#b1 {
+    height: 80px;
+}
+
+#b4 {
+    width: 40px;
+} */
+
+/* <!--css the object-fit property-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+width:200px;
+height: 300px;
+}
+
+</style>
+</head>
+<body>
+<h2> Image </h2>
+<img src="paris.jpg" alt="Paris" width="400" height="300">
+</body>
+</html>  */
+ 
+/*  Using object-fit cover;  # object-fit có các giá trị là fill, contain, cover, none, scale-down
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+width: 200px;
+height: 300px;
+object-fit: cover;
+}
+</style>
+</head>
+<body>
+<h2> Using object-fit:</h2>
+<img src="paris.jpg" alt="Paris" width="400" height="300">
+</body>
+</html>  */
+
+/*  Using object-fit contain;  # object-fit có các giá trị là fill, contain, cover, none, scale-down
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+width: 200px;
+height: 300px;
+object-fit: contain;
+}
+</style>
+</head>
+<body>
+ <h2> Using object-fit:contain;</h2>
+ <img src="paris.jpg" alt="Paris" width="400" height="300">
+ </body>
+ </html>   */
+ 
+ /*  Using object-fit none;  # object-fit có các giá trị là fill, contain, cover, none, scale-down
+ <DOCTYPE html>
+ <html>
+ <head>
+ <style>
+ img {
+ width:
+ height:
+ object-fit: fill;
+}
+ </style>
+ </head>
+ <body>
+ <h2> Using object-fit:fill;</h2>
+ <img src="paris.jpg" alt="Paris" width: 400px; height: 300px;
+}
+ </body>
+ </html>   */ 
+
+/*  Using object-fit none;  # object-fit có các giá trị là fill, contain, cover, none, scale-down
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+img {
+ width:
+ height:
+ object-fit: none;
+}
+ </style>
+ </head>
+ <body>
+ <h2> Using object-fit:fill;</h2>
+ <img src="paris.jpg" alt="Paris" width: 400px; height: 300px;
+}
+ </body>
+ </html>   */ 
+
+ /* Using object-fit scale-down;  # object-fit có các giá trị là fill, contain, cover, none, scale-down
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <style>
+ img {
+ width: 300px;
+ height: 200px;
+ object-fit: scale-down;
+}
+ </style>
+ </head>
+ <body>
+ <h2> Using object-fit:scale-down;</h2>
+ <img src="paris.jpg" alt="Paris" width="400" height="300">
+ </body>
+ </html>   */
+
+/* Another example
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Not using obeject-fit</h2>
+<p> ...... </p>
+<div style="width: 200px; height: 300px;>
+<img src="rock600*400.jpg" alt="Norway" style="float: left, width: 50%, height: 100%;">
+<img src="paris.jpg" alt="Paris" style="float: left; width: 50%; height: 100%;">
+</div>
+</body>
+</html>   */
+
+/* Another example 2
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Not using obeject-fit</h2>
+<p> ...... </p>
+<div style="width: 200px; height: 300px;>
+<img src="rock600*400.jpg" alt="Norway" style="float: left, width: 50%, height: 100%;object-fit: cover;">
+<img src="paris.jpg" alt="Paris" style="float: left; width: 50%; height: 100%;object-fit: cover;">
+</div>
+</body>
+</html>   */
+
+/*  More Examples
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.fill{object-fit: fill;}
+.contain{object-fit: contain;}
+.cover{object-fit: cover;}
+.scale-down{object-fit: scale-down;}
+.none{object-fit: none;}
+</style>
+</head>
+<body>
+<h1> ...........</h1>
+<h2> ...........</h2>
+<img src="paris.jpg" alt="Paris" style=" width="400px" height="300px">
+<h2> ...... </h2> 
+<img class="fill" src="paris.jpg" alt="Paris" style=" width="400px" height="300px">
+<h2> ...... </h2>
+<img class="contain" src="paris.jpg" alt="Paris" style=" width="400px" height="300px">
+<h2> ...... </h2>
+<img class="cover" src="paris.jpg" alt="Paris" style=" width="400px" height="300px">
+<h2> ...... </h2>
+<img class="scale-down" src="paris.jpg" alt="Paris" style=" width="400px" height="300px">
+<h2> ...... </h2> 
+<img class="none" src="paris.jpg" alt="Paris" style=" width="400px" height="300px">
+</body>
+</html>   */
+
+/*  CSS The object-position property  # cú pháp object-position: x y; #với x là số % hoặc px, y là số % hoặc px
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+width: 300px;
+height: 300px;
+object-fit: cover;
+object-position: 80% 100%;
+}
+</style>
+</head>
+<body>
+<h2> Using object-position: 80% 100%;</h2>
+<p> ............ </p>
+<img src="paris.jpg" alt="Paris" style="width: 300px; height: 300px;>
+</body>
+</html>   */
+
+/*  Example 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+width: 200px;
+height: 300px;
+object-fit: cover;
+object-position: 15%, 100%;
+}
+</style>
+</head>
+<body>
+<p> ...... </p>
+<h2> ...... </h2>
+<img src="paris.jpg" alt="Paris" width: "200"; height: "300";>
+</body>
+</html>   */
+
+/*  CSS Masking
+/* CSS mask-image Property
+/* Use an Image as the Mask Layer
+/* Example:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mask1 {
+mask-image: url(w3logo.png);
+maske-image: url(w3logo.png);
+maske-repeat: no-repeat;
+}
+</style>
+</head>
+<body>
+<h1> .............</h1>
+<div class="mask1">
+<img src="img.Sterre.jpg" alt="Sterre" width="600" height="400">
+</div>
+<h3> ...... </h3>
+<img src="img.Sterre.jpg" alt="Sterre" width="600" height="400">
+</body>
+</html>   */
+
+/*  Another example
+<!DOCTYPE html>
+<head>
+<style>
+.mask1 {
+maske-image: url(w3logo.png);
+maske-image: url(w3logo.png);
+}
+</style>
+</head>
+<body>
+<h1> .............</h1>
+<div class="mask1">
+<img src="img.Sterre.jpg" alt="Sterre" width="600" height="400">
+</div>
+<h3> ...... </h3>
+<img src="img.Sterre.jpg" alt="Sterre" width="600" height="400">
+</body>
+</html>   */
+
+/* Use Gradient as the Mask Layer
+Linear Gradient:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mask1 {
+maske-image: linear-gradient(transparent, black);
+mask-image: linear-gradient(transparent, black);
+}
+</style>
+</head>
+<body>
+<h1> .............</h1>
+<h3> ...... </h3>
+<div class="mask1">
+<img src="img.Sterre.jpg" alt="Sterre" width="600" height="400">
+</div>
+<h3> ...... </h3>
+<img src="img.Sterre.jpg" alt="Sterre" width="600" height="400">
+</body>
+</html>  */
+ 
+/* Another Example
+<head>
+<style>
+p {
+  font-size: 20px;
+  padding: 20px;
+  color: white;
+}
+.mask1 {
+  max-width: 600px;
+  height: 350px;
+  overflow-y: scroll;
+  background: url(img_5terre.jpg) no-repeat;
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient (black, transparent);
+}
+</style>
+</head>
+<body>
+
+<h1>The mask-image Property</h1>
+
+<h3>A linear gradient as a mask layer:</h3>
+
+<div class="mask1">
+<p>The Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of La Spezia Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+
+<p>The Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of La Spezia Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+
+<p>The Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of La Spezia Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+</div>
+
+</body>  */
+
+/* Another Example
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mask2 {
+  -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+  mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+</style>
+</head>
+<body>
+
+<h1>The mask-image Property</h1>
+
+<h3>A radial gradient as a mask layer (a circle):</h3>
+<div class="mask2">
+<img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>Original image:</h3>
+<img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+</html> */
+
+/* Another example
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mask3 {
+  -webkit-mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0, 0, 0.5) 50%);
+  mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+</style>
+</head>
+<body>
+
+<h1>The mask-image Property</h1>
+
+<h3>A radial gradient as a mask layer (an ellipse):</h3>
+<div class="mask3">
+<img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>Original image:</h3>
+<img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+</html>   */
+
+/* Another example
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1>The mask-image Property</h1>
+
+<h3>An SVG mask layer (formed as a triangle):</h3>
+<svg width="600" height="400">
+  <mask id="svgmask1">
+    <polygon fill="#ffffff" points="200 0, 400 400, 0 400"></polygon>
+  </mask>
+  <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img_5terre.jpg" mask="url(#svgmask1)"></image>
+</svg>
+
+<h3>Original image:</h3>
+<img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+</html>  */
+
+/* Another example
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1>The mask-image Property</h1>
+
+<h3>An SVG mask layer (formed as a star):</h3>
+<svg width="600" height="400">
+  <mask id="svgmask2">
+    <polygon fill="#ffffff" points="100,10 40,198 190,78 10,78 160,198"></polygon>
+  </mask>
+  <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img_5terre.jpg" mask="url(#svgmask2)"></image>
+</svg>
+
+<h3>Original image:</h3>
+<img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+</html>  */
+
+/* Another example 
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1>The mask-image Property</h1>
+
+<h3>An SVG mask layer (formed as circles):</h3>
+<svg width="600" height="400">
+  <mask id="svgmask3">
+    <circle fill="#ffffff" cx="75" cy="75" r="75"></circle>
+    <circle fill="#ffffff" cx="80" cy="260" r="75"></circle>
+    <circle fill="#ffffff" cx="270" cy="160" r="75"></circle>
+  </mask>
+  <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img_5terre.jpg" mask="url(#svgmask3)"></image>
+</svg>
+
+<h3>Original image:</h3>
+<img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+</html>   */
+/*  
+
+
+
+
