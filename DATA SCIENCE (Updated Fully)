@@ -1,0 +1,2766 @@
+!  Data Science  !
+*** What is Data Science? ***
+- Khoa học dữ liệu là về việc thu thập dữ liệu, phân tích và ra quyết định.
+- Khoa học dữ liệu là về việc tìm kiếm các mô hình trong dữ liệu thông qua phân tích và đưa ra dự đoán trong tương lai.
++) Bằng cách sử dụng Khoa học dữ liệu, các công ty có thể thực hiện:
+   - Quyết định tốt hơn (nên chọn A hay B)
+   - Phân tích dự đoán (điều gì sẽ xảy ra tiếp theo?)
+   - Khám phá mẫu (tìm mẫu hoặc có thể là thông tin ẩn trong dữ liệu)
+*** Where is Data Science Needed? ***
+- Khoa học dữ liệu hiện nay được sử dụng trong nhiều ngành công nghiệp trên thế giới, ví dụ như ngân hàng, tư vấn, chăm sóc sức khỏe và sản xuất.
+
+VÍ DỤ về nơi cần đến Khoa học dữ liệu:
+   - Đối với việc lập kế hoạch tuyến đường: Để khám phá những tuyến đường tốt nhất để vận chuyển
+   - Để dự đoán sự chậm trễ của chuyến bay/tàu/tàu hỏa, v.v. (thông qua phân tích dự đoán)
+   - Để tạo các ưu đãi khuyến mại
+   - Để tìm thời gian phù hợp nhất để giao hàng
+   - Để dự báo doanh thu năm tiếp theo của một công ty
+   - Để phân tích lợi ích sức khỏe của việc đào tạo
+   - Để dự đoán ai sẽ thắng cử
+
++) Khoa học dữ liệu có thể được áp dụng ở hầu hết mọi bộ phận của doanh nghiệp nơi có dữ liệu. Ví dụ:
+      - Hàng tiêu dùng
+      - Thị trường chứng khoán
+      - Ngành công nghiệp
+      - Chính trị
+      - Các công ty hậu cần
+      - Thương mại điện tử
+
+*** How Does a Data Scientist Work? ***
++) Một nhà khoa học dữ liệu cần có chuyên môn trong một số lĩnh vực sau:
+       - Học máy
+       - Thống kê
+       - Lập trình (Python hoặc R)
+       - Toán học
+       - Cơ sở dữ liệu
+=> Nhà khoa học dữ liệu phải tìm ra các mẫu trong dữ liệu. Trước khi có thể tìm ra các mẫu, anh ấy/cô ấy phải sắp xếp dữ liệu theo một định dạng chuẩn.
+
+
++) Sau đây là cách một Nhà khoa học dữ liệu làm việc:
+1.  Đặt câu hỏi đúng - Để hiểu được vấn đề kinh doanh.
+2.  Khám phá và thu thập dữ liệu - Từ cơ sở dữ liệu, nhật ký web, phản hồi của khách hàng, v.v.
+3.  Trích xuất dữ liệu - Chuyển đổi dữ liệu sang định dạng chuẩn.
+4.  Làm sạch dữ liệu - Xóa các giá trị sai khỏi dữ liệu.
+5.  Tìm và thay thế các giá trị bị thiếu - Kiểm tra các giá trị bị thiếu và thay thế chúng bằng giá trị phù hợp (ví dụ: giá trị trung bình).
+6.  Chuẩn hóa dữ liệu - Điều chỉnh các giá trị trong phạm vi thực tế (ví dụ 140 cm nhỏ hơn 1,8 m. Tuy nhiên, số 140 lớn hơn 1,8. - do đó việc điều chỉnh tỷ lệ rất quan trọng).
+7.  Phân tích dữ liệu, tìm ra mô hình và đưa ra dự đoán trong tương lai .
+8.  Trình bày kết quả - Trình bày kết quả với những hiểu biết hữu ích theo cách mà "công ty" có thể hiểu được.
+
+*** What is Data? ***
+- Dữ liệu là một tập hợp thông tin.
+- Một mục đích của Khoa học dữ liệu là cấu trúc dữ liệu, giúp dữ liệu dễ hiểu và dễ làm việc.
++) Dữ liệu có thể được phân thành 2 nhóm:
+       - Dữ liệu có cấu trúc (structured data)
+       - Dữ liệu phi cấu trúc(unstructured data)
+
+*** Unstructured Data: ***
+- Dữ liệu phi cấu trúc không được tổ chức. Chúng ta phải tổ chức dữ liệu cho mục đích phân tích.
+*** Structured Data: ***
+- Dữ liệu có cấu trúc được sắp xếp hợp lý và dễ sử dụng hơn.
+
+*** How to Structure Data? ***
+- Chúng ta có thể sử dụng mảng hoặc bảng cơ sở dữ liệu để cấu trúc hoặc trình bày dữ liệu.
+VÍ DỤ về một mảng:  [80, 85, 90, 95, 100, 105, 110, 115, 120, 125]
+VÍ DỤ cách tạo một mảng trong Python: 
+Array = [80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130]
+print(Array)
+kết quả:  [80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130]
+==> Làm việc với các tập dữ liệu rất lớn trong Khoa Học Dữ Liệu là việc thường xuyên.
+
+*** Data Science - Database Table(Bảng cơ sở dữ liệu) ***
+- Bảng cơ sở dữ liệu là bảng có dữ liệu có cấu trúc.
++) Bảng sau đây hiển thị bảng cơ sở dữ liệu với dữ liệu sức khỏe được trích xuất từ ​​đồng hồ thể thao:
+Khoảng thời gian     Xung trung bình     Xung tối đa 	 Đốt cháy calo	         Giờ_Làm_việc	         Giờ_Ngủ
+            30	                            80                  120	              240	                           10	                      7
+            30	                            85	          120	              250	                           10	                      7
+            45	                            90	          130	              260	                            8	                      7               
+            45	                            95	          130	              270	                            8	                      7 
+            45	                           100	          140	              280	                            0	                      7
+            60	                           105	          140	              290	                            7	                      8
+            60                                   110	          145	              300	                            7	                      8
+            60	                            115	          145	              310	                            8	                      8
+            75	                            120	          150	              320	                            0	                      8
+            75	                            125	          150	              330	                            8	                      8
+==> Bộ dữ liệu này chứa thông tin về một buổi tập luyện thông thường như thời lượng, nhịp tim trung bình, lượng calo đốt cháy, v.v.
+
+*** Database Table Structure(Cấu trúc bảng cơ sở dữ liệu) ***
++) Một bảng cơ sở dữ liệu bao gồm các cột và các hàng:
+       - Hàng là cách thể hiện dữ liệu theo chiều ngang.
+       - Cột là cách thể hiện dữ liệu theo chiều dọc.
+VÍ DỤ một bảng cơ sở dữ liệu:
+                    Cột 1	                        Cột 2	             Cột 3	             Cột 4	                  Cột 5	      Cột 6
+           Khoảng thời gian	Xung trung bình	Xung tối đa	Đốt cháy calo	Giờ_Làm_việc	    Giờ_Ngủ
+Hàng 1	      30	                   80	                      120	                  240	                   10	                  7
+Hàng 2	30	85	120	250	10	7
+Hàng 3	45	90	130	260	8	7
+Hàng 4	45	95	130	270	8	7
+Hàng 5	45	100	140	280	0	7
+Hàng 6	60	105	140	290	7	8
+Hàng 7	60	110	145	300	7	8
+Hàng 8	60	115	145	310	8	8
+Hàng 9	75	120	150	320	0	8
+Hàng 10	75	125	150	330	8	8
+
+*** Variables(Biến số) ***
+- Biến được định nghĩa là thứ có thể đo lường hoặc đếm được.
+- Ví dụ có thể là ký tự, số hoặc thời gian.
++) Trong ví dụ dưới đây, chúng ta có thể thấy rằng mỗi cột biểu diễn một biến.
+Khoảng thời gian	Xung trung bình	Xung tối đa	Đốt cháy calo	  Giờ_Làm_việc	      Giờ_Ngủ
+          30	                           80	                      120	                240	                  10	                    7
+30	85	120	250	10	7
+45	90	130	260	8	7
+45	95	130	270	8	7
+45	100	140	280	0	7
+60	105	140	290	7	8
+60	110	145	300	7	8
+60	115	145	310	8	8
+75	120	150	320	0	8
+75	125	150	330	8	8
+# Giải thích: 
+Có 6 cột, nghĩa là có 6 biến (Thời lượng, Nhịp tim trung bình, Nhịp tim tối đa, Lượng calo đốt cháy, Giờ làm việc, Giờ ngủ).
+Có 11 hàng, nghĩa là mỗi biến có 10 quan sát.
+
+? CÂU HỎI ?
+1. Nhưng nếu có 11 hàng, tại sao lại chỉ có 10 quan sát?
+Trả lời: Bởi vì hàng đầu tiên là nhãn, nghĩa là nó là tên của biến.
+
+*** Data Science & Python ***
+- Python là ngôn ngữ lập trình được các nhà khoa học dữ liệu sử dụng rộng rãi.
+- Python có các thư viện và hàm toán học tích hợp sẵn, giúp tính toán các bài toán và phân tích dữ liệu dễ dàng hơn.
+
+*** Python Libraries ***
+- Python có các thư viện với bộ sưu tập lớn các hàm toán học và công cụ phân tích.
++) Trong hướng dẫn này, chúng ta sẽ sử dụng các thư viện sau:
+      Pandas - Thư viện này được sử dụng cho các hoạt động dữ liệu có cấu trúc, như nhập tệp CSV, tạo khung dữ liệu và chuẩn bị dữ liệu
+      Numpy - Đây là một thư viện toán học. Có đối tượng mảng N chiều mạnh mẽ, đại số tuyến tính, biến đổi Fourier, v.v.
+     Matplotlib - Thư viện này được sử dụng để trực quan hóa dữ liệu.
+      SciPy - Thư viện này có các mô-đun đại số tuyến tính
+==> Chúng tôi sẽ sử dụng các thư viện này trong suốt hướng dẫn để tạo ví dụ.
+
+*** Data Science - Python DataFrame ***
++) Create a DataFrame with Pandas:
+- Khung dữ liệu là biểu diễn có cấu trúc của dữ liệu.
+- Hãy định nghĩa một khung dữ liệu có 3 cột và 5 hàng với các số hư cấu:
+VÍ DỤ:
+import pandas as pd
+d = {'col1' : [1, 2, 3, 4, 7], 'col2' : [4, 5, 6, 9, 5], 'col3' :[7, 8, 12, 1, 11]}
+df = pd.DataFrame(data=d)
+print(df)
+kết quả:     col1  col2  col3
+                 0     1     4     7
+                 1     2     5     8
+                 2     3     6    12
+                 3     4     9     1
+                 4     7     5    11
+# Giải Thích: 
+Nhập thư viện Pandas dưới dạng pd
+Định nghĩa dữ liệu với cột và hàng trong một biến có tên d
+Tạo một khung dữ liệu bằng cách sử dụng hàm pd.DataFrame()
+Khung dữ liệu chứa 3 cột và 5 hàng
+In kết quả khung dữ liệu bằng hàm print()
+TIPS: Chúng ta viết pd. trước DataFrame() để cho Python biết rằng chúng ta muốn kích hoạt hàm DataFrame() từ thư viện Pandas. Hãy chú ý đến từ D và F viết hoa trong DataFrame!
+
+*** Interpreting the Output(Diễn giải đầu ra) ***
++) Đây là kết quả đầu ra:  https://www.w3schools.com/datascience/img_dataframe_output.png
+- Chúng ta thấy rằng "col1", "col2" và "col3" là tên của các cột.
+- Đừng nhầm lẫn về các số dọc từ 0-4. Chúng cho chúng ta biết thông tin về vị trí của các hàng.
+- Trong Python, số thứ tự của các hàng bắt đầu từ số không.
+- Bây giờ, chúng ta có thể sử dụng Python để đếm các cột và hàng.
+VÍ DỤ chúng ta có thể sử dụng df.shape[1] để tìm số cột:
+import pandas as pd
+d = {'col1' : [1,2,3,4,7], 'col2' : [4,5,6,9,5], 'col3' : [7,8,12,1,11]}
+df = pd.DataFrame(data=d)
+count_column = df.shape[1]      #df.shape[] có 2 giá trị là 0 và 1 ; 0 là tìm số hàng, 1 là tìm số cột
+print("Number of columns:")
+print(count-column)
+kết quả:   Number of columns:
+               3
+- Chúng ta có thể sử dụng df.shape[0] để tìm số hàng:
+import pandas as pd
+d = {'col1' : [1,2,3,4,7], 'col2' : [4,5,6,9,5], 'col3' : [7,8,12,1,11]}
+df = pd.DataFrame(data=d)
+count_row = df.shape[0]
+print("Number of rows:")
+print(count_row)
+kết quả:   Number of rows:
+               5 
+? Câu hỏi ?
+1. Tại sao chúng ta không thể tự đếm các hàng và cột?
+Trả lời: Nếu chúng ta làm việc với các tập dữ liệu lớn hơn với nhiều cột và hàng, sẽ rất khó để tự đếm. Bạn có nguy cơ đếm sai. Nếu chúng ta sử dụng đúng các hàm tích hợp trong Python, chúng ta đảm bảo rằng số đếm là chính xác.
+
+*** Data Science Functions(Chức năng Khoa Học Dữ Liệu) ***
+- Chương này trình bày ba hàm thường dùng khi làm việc với Khoa học dữ liệu: max(), min() và mean().
+TIPS: Chúng tôi sử dụng dấu gạch dưới  (_)    để phân tách các chuỗi vì Python không thể đọc dấu cách làm dấu phân cách.
+
+*** The max() Function ***
+- Hàm Python      max()     được sử dụng để tìm giá trị cao nhất trong một mảng.
+Average_pulse_max = max(80,85,90,95,100,105,110,115,120,125)
+print(Average_pulse_max)
+kết quả:  125
+
+*** The min() Function ***
+- Hàm Python      min()      được sử dụng để tìm giá trị thấp nhất trong một mảng.
+Average_pulse_min = min(80, 85, 90, 95, 100, 105, 110, 115, 120, 125)
+print(Average_pulse_min)
+kết quả:  80
+
+*** The mean() Function ***
+- Hàm NumPy      mean()     được sử dụng để tìm giá trị trung bình của một mảng.
+import numpy as np
+Calories_burnage = [240,250,260,270,280,290,300,310,320,330]
+Average_calories_burnage = np.mean(Calories_burnage)
+print(Average_calories_burnage)
+kết quả: 285.0
+
+!  NOTE !: Chúng ta viết np. trước mean để cho Python biết rằng chúng ta muốn kích hoạt hàm mean từ thư viện Numpy.
+
+*** Data Science - Data Preparation(Chuẩn bị dữ liệu) ***
+- Trước khi phân tích dữ liệu, Nhà khoa học dữ liệu phải trích xuất dữ liệu và làm cho dữ liệu sạch và có giá trị.
+
+*** Extract and Read Data With Pandas ***
+- Trước khi có thể phân tích dữ liệu, dữ liệu đó phải được nhập/trích xuất.
+- Trong ví dụ dưới đây, chúng tôi sẽ chỉ cho bạn cách nhập dữ liệu bằng Pandas trong Python.
++) Chúng tôi sử dụng      read_csv()      hàm này để nhập tệp CSV có dữ liệu sức khỏe:
+VÍ DỤ: ( chúng sẽ tạo ra 2 file: là  prog.py và  data.csv)
++) Đối với file    prog.py    :
+import pandas as pd
+health_data = pd.read_csv("data.csv", header = 0, sep=",")
+print(health_data)
++) Đối với file    data.csv       :
+Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+30,80,120,240,10,7
+45,85,120,250,10,7
+45,90,130,260,8,7
+60,95,130,270,8,7
+60,100,140,280,0,7
+,,,,,
+60,105,140,290,7,8
+60,110,145,300,7,8
+45,,AF,,8,8
+45,115,145,310,8,8
+60,120,150,320,0,8
+60,9 000,130,,,8
+45,125,150,330,8,8
+kết quả:  xem khi chạy được trình kết hợp 2 file lại.
+
+# VÍ DỤ giải thích:
+Nhập thư viện Pandas
+Đặt tên khung dữ liệu là health_data.
+header=0có nghĩa là các tiêu đề cho tên biến sẽ được tìm thấy ở hàng đầu tiên (lưu ý rằng 0 có nghĩa là hàng đầu tiên trong Python)
+sep=","có nghĩa là "," được sử dụng như dấu phân cách giữa các giá trị. Điều này là do chúng tôi đang sử dụng loại tệp .csv (các giá trị được phân cách bằng dấu phẩy)
+
+TIPS: Nếu bạn có tệp CSV lớn, bạn có thể sử dụng    head()     hàm này để chỉ hiển thị 5 hàng trên cùng:
+VÍ DỤ: (Cũng tạo ra 2 file:  prog.py   và      data.csv):
++) Đối với prog.py:
+import pandas as pd
+health_data = pd.read_csv("data.csv", header=0, sep=",")
+print(health_data.head())
++) Đối với data.csv:
+Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+30,80,120,240,10,7
+45,85,120,250,10,7
+45,90,130,260,8,7
+60,95,130,270,8,7
+60,100,140,280,0,7
+,,,,,
+60,105,140,290,7,8
+60,110,145,300,7,8
+45,,AF,,8,8
+45,115,145,310,8,8
+60,120,150,320,0,8
+60,9 000,130,,,8
+45,125,150,330,8,8
+kết quả:  xem khi chạy được trình kết hợp 2 file lại.
+
+*** Data Cleaning ***:
++) Hãy xem dữ liệu đã nhập. Như bạn có thể thấy, dữ liệu "bẩn" với các giá trị không đúng hoặc chưa được đăng ký:
+VÍ DỤ như trong hình ảnh số liệu đây:  https://www.w3schools.com/datascience/img_data_raw.png
+      - Có một số ô trống
+      - Nhịp tim trung bình là 9.000 là không thể
+      - 9.000 sẽ được coi là không phải số, vì có dấu cách phân cách
+      - Một quan sát về xung tối đa được biểu thị là "AF", điều này không có ý nghĩa
+==> Vì vậy, chúng ta phải làm sạch dữ liệu để thực hiện phân tích.
+
+*** Remove Blank Rows ***:
+- Chúng ta thấy rằng các giá trị không phải số (9 000 và AF) nằm trên cùng một hàng với các giá trị bị thiếu.
+Giải pháp:  Chúng ta có thể xóa các hàng có quan sát bị thiếu để khắc phục sự cố này.
+- Khi chúng ta tải một tập dữ liệu bằng Pandas, tất cả các ô trống sẽ tự động được chuyển đổi thành giá trị "NaN".
+ Vì vậy, việc loại bỏ các ô NaN sẽ cung cấp cho chúng ta một tập dữ liệu sạch có thể phân tích được.
+VÍ DỤ:(Cũng tạo ra 2 file:  prog.py   và      data.csv):
+- Chúng ta có thể sử dụng dropna()hàm này để xóa NaN. axis=0 nghĩa là chúng ta muốn xóa tất cả các hàng có giá trị NaN:
++) Đối với file  Prog.py:
+import pandas as pd
+health_data = pd.read_csv("data.csv", header=0, sep=",")
+health_data.dropna(axis=0, inplace=True)
+print(health_data)
++) Đối với file  data.csv:
+Duration, Average_Pulse, Max_Pulse, Calorie_Burnage, Hours_Work, Hours_Sleep
+30,80,120,240,10,7
+45,85,120,250,10,7
+45,90,130,260,8,7
+60,95,130,270,8,7
+60,100,140,280,0,7
+,,,,,                                #chỉ được tối đa 5 dấu  ,  để tách các chuỗi cho dễ trình bày, quá 5 dấu sẽ bị lỗi.
+60,105,140,290,7,8
+60,110,145,300,7,8
+45,,AF,,8,8
+45,115,145,310,8,8
+60,120,150,320,0,8
+60,9 000,130,,,8
+45,125,150,330,8,8
+kết quả:  https://www.w3schools.com/datascience/img_data_cleaned.png
+==> kết quả là một tập dữ liệu không có hàng NaN.
+
+*** Data Catagories(Thể loại dữ liệu) ***:
+- Để phân tích dữ liệu, chúng ta cũng cần biết loại dữ liệu chúng ta đang xử lý.
++) Dữ liệu có thể được chia thành hai loại chính:
+     1. Dữ liệu định lượng(Quantitative Data) - Có thể được thể hiện dưới dạng số hoặc có thể định lượng. Có thể được chia thành hai loại phụ:
+         - Dữ liệu rời rạc(Discrete Data) : Các số được tính là "toàn bộ", ví dụ số học sinh trong một lớp, số bàn thắng trong một trận bóng đá
+         - Dữ liệu liên tục(Continuous Data) : Các con số có thể có độ chính xác vô hạn. Ví dụ: cân nặng của một người, cỡ giày, nhiệt độ
+     2. Dữ liệu định tính(Qualitative Data) - Không thể biểu thị dưới dạng số và không thể định lượng. Có thể chia thành hai loại phụ:
+         -  Dữ liệu danh nghĩa(Norminal Data) : Ví dụ: giới tính, màu tóc, dân tộc
+         - Dữ liệu thứ tự(Ordinal Data) : Ví dụ: điểm số ở trường (A, B, C), tình trạng kinh tế (thấp, trung bình, cao)
+
+*** Data Types ***:
+- Chúng ta có thể sử dụng     info()     hàm này để liệt kê các kiểu dữ liệu trong tập dữ liệu của mình: 
+VÍ DỤ: (tạo ra 2 file:  prog.py   và      data.csv):
++) Đối với file  prog.py:
+import pandas as pd
+health_data = pd.read_csv("data.csv", header=0, sep=",")
+print(health_data.info())
++)  Đối với file  data.csv:
+Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+30,80,120,240,10,7
+45,85,120,250,10,7
+45,90,130,260,8,7
+60,95,130,270,8,7
+60,100,140,280,0,7
+,,,,,                              #chỉ được tối đa 5 dấu  ,  để tách các chuỗi cho dễ trình bày, quá 5 dấu sẽ bị lỗi.
+60,105,140,290,7,8
+60,110,145,300,7,8
+45,,AF,,8,8
+45,115,145,310,8,8
+60,120,150,320,0,8
+60,9 000,130,,,8
+45,125,150,330,8,8
+kết quả:  https://www.w3schools.com/datascience/img_data_float_object.png
+- Chúng ta thấy rằng tập dữ liệu này có hai loại dữ liệu khác nhau:
+        Float64
+        Object
+ - Chúng ta không thể sử dụng đối tượng để tính toán và thực hiện phân tích ở đây. Chúng ta phải chuyển đổi kiểu đối tượng thành float64 (float64 là một số có phần thập phân trong Python).
+
++) Chúng ta có thể sử dụng       astype()     hàm này để chuyển đổi dữ liệu thành float64.
+VÍ DỤ: (tạo ra 2 file:  prog.py    và      data.csv):
++) Đối với file  prog.py:
+import pandas as pd
+health-data = pd.read_csv("data.csv", header=0, sep=",")
+health-data.dropna(axis=0, inplace=True)
+
+health_data["Average_Pulse"] = 
+health_data["Average_Pulse"].astype(float)
+health_data["Max_Pulse"] = 
+health_data["Max_Pulse"].astype(float)
+print(health_data.info())
++) Đối với file  data.csv:
+Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+30,80,120,240,10,7
+45,85,120,250,10,7
+45,90,130,260,8,7
+60,95,130,270,8,7
+60,100,140,280,0,7
+,,,,,
+60,105,140,290,7,8
+60,110,145,300,7,8
+45,,AF,,8,8
+45,115,145,310,8,8
+60,120,150,320,0,8
+60,9 000,130,,,8
+45,125,150,330,8,8
+kết quả:  https://www.w3schools.com/datascience/img_data_float.png
+==> Bây giờ, tập dữ liệu chỉ có kiểu dữ liệu float64.
+
+*** Analyze the Data ***:
+- Khi đã làm sạch tập dữ liệu, chúng ta có thể bắt đầu phân tích dữ liệu.
+- Chúng ta có thể sử dụng hàm      describe()       trong Python để tóm tắt dữ liệu:
+VÍ DỤ: (tạo ra 2 file:  prog.py    và      data.csv):
++) Đối với file prog.py:
+import pandas as  pd
+health_data = pd.read_csv("data.csv", header=0, sep=",")
+pd.set_option("display.max_columns', None)
+print(health_data.describe())
++) Đối với file  data.csv:
+Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+30,80,120,240,10,7
+45,85,120,250,10,7
+45,90,130,260,8,7
+60,95,130,270,8,7
+60,100,140,280,0,7
+60,105,140,290,7,8
+60,110,145,300,7,8
+45,115,145,310,8,8
+60,120,150,320,0,8
+45,125,150,330,8,8
+kết quả:
+	Khoảng thời gian	Xung trung bình	Xung tối đa	Đốt cháy calo	   Giờ_Làm_việc	 Giờ_Ngủ
+Đếm	10.0	                         10.0	              10.0	                 10.0	             10.0	             10.0
+Nghĩa là	 51.0	                 102,5	              137.0	                  285.0	               6.6	               7,5
+Tiêu chuẩn 10,49	                 15.4	               11.35	           30,28	               3.63	               0,53
+Tối thiểu	    30.0	                  80.0	               120.0	           240.0	                0.0	                7.0
+25%	            45.0	                  91,25	               130.0	            262,5	                7.0	                7.0
+50%	            52,5	                  102,5	                140.0	            285.0	                8.0	                7,5
+75%	            60.0	                  113,75	                145.0	              307,5	                 8.0	                8.0
+Tối đa	    60.0	                  125.0	                150.0	              330.0	                10.0	                8.0
+
+# Giải thích:
+ Count - đếm số lượng quan sát
+ Mean - giá trị trung bình
+ Std(Standard deviation) - độ lệch chuẩn (giải thích trong chương thống kê)
+ Min - giá trị thấp nhất
+ 25%, 50% and 75% are percentiles (giải thích trong chương thống kê)
+ Max - giá trị cao nhất
+
+*** Linear Functions(Các hàm tuyến tính) ***:
+- Các hàm toán học rất quan trọng đối với nhà khoa học dữ liệu vì chúng ta muốn đưa ra dự đoán và diễn giải chúng.
+- Trong toán học, hàm được sử dụng để liên hệ một biến với một biến khác.
+- Một hàm tuyến tính có một biến độc lập (x) và một biến phụ thuộc (y) và có dạng sau:  
+       y = f(x) = ax + b
+  Hàm này được sử dụng để tính giá trị cho biến phụ thuộc (y) khi chúng ta chọn giá trị cho biến độc lập (x) .
+# Giải thích:
+      f(x) = đầu ra (biến phụ thuộc)
+      x = đầu vào (biến độc lập)
+      a = độ dốc = là hệ số của biến độc lập. Nó cho biết tốc độ thay đổi của biến phụ thuộc
+      b = giao điểm = là giá trị của biến phụ thuộc khi x = 0. Đây cũng là điểm mà đường chéo cắt trục tung.
+
+*** Linear Function With One Explanatory Variable(Hàm tuyến tính có một biến giải thích) *: 
+- Một hàm có một biến giải thích có nghĩa là chúng ta sử dụng một biến để dự đoán.
++) Giả sử chúng ta muốn dự đoán lượng calo đốt cháy bằng cách sử dụng nhịp tim trung bình. Chúng ta có công thức sau: 
+          f(x) = 2x + 80
+# Các con số và biến số có nghĩa là:
+        f(x) = Đầu ra. Con số này là nơi chúng ta có được giá trị dự đoán của Calorie_Burnage
+        x = Đầu vào là Average_Pulse
+        2 = Độ dốc = Chỉ định lượng Calorie_Burnage tăng lên bao nhiêu nếu Average_Pulse tăng thêm một. Nó cho chúng ta biết đường chéo "dốc" như thế nào
+       80 = Intercept = Giá trị cố định. Đó là giá trị của biến phụ thuộc khi x = 0
+
+*** Plotting a Linear Function(Vẽ đồ thị hàm tuyến tính) ***:
+- Thuật ngữ tuyến tính có nghĩa là "đường thẳng". Vì vậy, nếu bạn thể hiện một hàm tuyến tính bằng đồ họa, đường thẳng sẽ luôn là đường thẳng. Đường thẳng có thể dốc lên, dốc xuống và trong một số trường hợp có thể nằm ngang hoặc thẳng đứng.
+VÍ DỤ về đồ họa của hàm toán học sau đây:
+https://www.w3schools.com/datascience/img_linearity.png
+# Giải thích biểu đồ:
+       Trục ngang thường được gọi là trục x. Ở đây, nó biểu diễn Average_Pulse.
+       Trục dọc thường được gọi là trục y. Ở đây, nó biểu thị Calorie_Burnage.
+       Calorie_Burnage là một hàm của Average_Pulse, vì Calorie_Burnage được cho là phụ thuộc vào Average_Pulse.
+       Nói cách khác, chúng tôi sử dụng Average_Pulse để dự đoán Calorie_Burnage.
+       Đường màu xanh (đường chéo) biểu thị cấu trúc của hàm toán học dự đoán lượng calo đốt cháy.
+
+*** Data Science - Plotting Linear Functions(Vẽ đồ thị tuyến tính) ***:
+*** Phot the Existing Data in Python ***:
+- Bây giờ, trước tiên chúng ta có thể biểu diễn giá trị của Average_Pulse theo Calorie_Burnage bằng thư viện matplotlib.
+- Hàm      plot()     được sử dụng để tạo biểu đồ phân chia lục giác 2D của các điểm x,y:
+VÍ DỤ: (tạo ra 2 file là prog.py và data.csv)
++) Đối với file  prog.py: 
+#Three lines to make our compiler able to draw:
+import sys
+import matplotlib
+matplotlib.use('Agg')
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+health_data = pd.read_csv("data.csv", header=0, sep=",")
+
+health_data.plot(x ='Average_Pulse', y='Calorie_Burnage', kind='line')
+plt.ylim(ymin=0)
+plt.xlim(xmin=0)
+
+plt.show()
+
+#Two lines to make our compiler able to draw:
+plt.savefig(sys.stdout.buffer)
+sys.stdout.flush()
++) Đối với file data.csv:
+Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+30,80,120,240,10,7
+45,85,120,250,10,7
+45,90,130,260,8,7
+60,95,130,270,8,7
+60,100,140,280,0,7
+60,105,140,290,7,8
+60,110,145,300,7,8
+45,115,145,310,8,8
+60,120,150,320,0,8
+45,125,150,330,8,8
+kết quả:  https://www.w3schools.com/datascience/img_tryit_plot.png
+# Giải thích:
+       Nhập mô-đun pyplot của thư viện matplotlib
+       Vẽ biểu đồ dữ liệu từ Average_Pulse so với Calorie_Burnage
+       kind= 'line' cho chúng ta biết loại cốt truyện nào chúng ta muốn. Ở đây, chúng ta muốn có một đường thẳng
+       plt.ylim() và plt.xlim() cho chúng ta biết giá trị nào chúng ta muốn trục bắt đầu. Ở đây, chúng ta muốn trục bắt đầu từ số không
+       plt.show() cho chúng ta thấy kết quả
+
+=> The Graph Ouput: Như chúng ta có thể thấy, có một mối quan hệ giữa Average_Pulse và Calorie_Burnage. Calorie_Burnage tăng theo tỷ lệ thuận với Average_Pulse. Điều đó có nghĩa là chúng ta có thể sử dụng Average_Pulse để dự đoán Calorie_Burnage.
+
+*** Why is The Line Not Fully Drawn Down to The y-axis(Tại sao đường thẳng không được vẽ hoàn toàn xuống trục y)? ***
+- Lý do là chúng ta không có quan sát nào trong đó Average_Pulse hoặc Calorie_Burnage bằng 0. 80 là quan sát đầu tiên của Average_Pulse và 240 là quan sát đầu tiên của Calorie_Burnage.
+- Hãy nhìn vào đường thẳng. Lượng calo đốt cháy sẽ thế nào nếu nhịp tim trung bình tăng từ 80 lên 90?: https://www.w3schools.com/datascience/img_linearity4.png  
+==> Chúng ta có thể sử dụng đường chéo để tìm hàm toán học dự đoán lượng calo đốt cháy.
+
+Thực ra thì:
+    Nếu nhịp tim trung bình là 80 thì lượng calo đốt cháy là 240
+    Nếu nhịp tim trung bình là 90 thì lượng calo đốt cháy là 260
+    Nếu nhịp tim trung bình là 100 thì lượng calo đốt cháy là 280
+   ==> Có một quy luật. Nếu nhịp tim trung bình tăng 10, lượng calo đốt cháy tăng 20.
+
+*** Data Science - Slope and Intercept(Độ dốc và hệ số chặn) ***:
++) Bây giờ chúng tôi sẽ giải thích cách tìm độ dốc và đoạn chắn của hàm số:
+       f(x) = 2x + 80
+- Hình ảnh bên dưới chỉ vào Độ dốc - biểu thị độ dốc của đường thẳng và Điểm chặn - là giá trị của y khi x = 0 (điểm mà đường chéo cắt trục tung). Đường màu đỏ là phần tiếp theo của đường màu xanh lam từ trang trước.
+       https://www.w3schools.com/datascience/img_linearity5.png
+
+*** Find the Slope ***:
+- Độ dốc được định nghĩa là lượng calo đốt cháy tăng lên bao nhiêu, nếu nhịp tim trung bình tăng thêm một. Nó cho chúng ta biết đường chéo "dốc" như thế nào.
+- Chúng ta có thể tìm độ dốc bằng cách sử dụng hiệu số tỉ lệ của hai điểm trên đồ thị.
+      Nếu nhịp tim trung bình là 80 thì lượng calo đốt cháy là 240
+      Nếu nhịp tim trung bình là 90 thì lượng calo đốt cháy là 260
+- Chúng ta thấy rằng nếu nhịp tim trung bình tăng thêm 10 thì lượng calo đốt cháy tăng thêm 20.
+      Slope = y/x = 20/10 = 2
+==> Độ dốc là 2.
++) Về mặt toán học, độ dốc được định nghĩa như sau:
+        Slope = f(x2) - f(x1) / x2 - x1
+# Chú thích:
+    f(x2) = Quan sát thứ hai của Calorie_Burnage = 260
+    f(x1) = Quan sát thứ nhất của Calorie_Burnage = 240
+    x2 = Quan sát thứ hai của Average_Pulse = 90
+    x1 ​​= Quan sát thứ nhất của Average_Pulse = 80
+
+! LƯU Ý !: Hãy nhất quán để xác định các quan sát theo đúng thứ tự! Nếu không, dự đoán sẽ không chính xác!
+
+*** Use Python to Find the Slope ***:
+- Calculate the slope with the following code:
+def slope(x1, y1, x2, y2):
+  s = (y2-y1)/(x2-x1)
+     return s
+print(slope(80, 240, 90, 260))
+kết quả:  2.0
+
+*** Find the Intercept(Tìm Điển Chặn) ***:
+- Giá trị chặn được sử dụng để tinh chỉnh khả năng dự đoán Calorie_Burnage của hàm.
+- Điểm cắt là điểm mà đường chéo cắt trục y, nếu đường chéo được vẽ đầy đủ.
+- Giá trị cắt là giá trị của y khi x = 0.
+- Ở đây, chúng ta thấy rằng nếu nhịp tim trung bình (x) bằng 0 thì lượng calo đốt cháy (y) là 80.
+==> Vậy, giao điểm là 80.
+- Đôi khi, việc chặn có ý nghĩa thực tế. Đôi khi thì không.
+?  Có hợp lý không khi nhịp đập trung bình bằng 0 ?
+Trả lời:  Không, bạn sẽ chết và chắc chắn sẽ không đốt cháy được bất kỳ calo nào. Tuy nhiên, chúng ta cần đưa giá trị chặn vào để hoàn thiện khả năng dự đoán chính xác Calorie_Burnage của hàm toán học.'
++) Các ví dụ khác trong đó giá trị cắt của một hàm toán học có thể có ý nghĩa thực tế:
+      - Dự đoán doanh thu năm sau bằng cách sử dụng chi phí tiếp thị (Chúng ta sẽ có bao nhiêu doanh thu vào năm sau nếu chi phí tiếp thị bằng 0?). Có thể cho rằng một công ty vẫn sẽ có một số doanh thu ngay cả khi không chi tiền cho tiếp thị.
+      - Mức tiêu thụ nhiên liệu theo tốc độ (Chúng ta tiêu thụ bao nhiêu nhiên liệu nếu tốc độ bằng 0 dặm/giờ?). Một chiếc ô tô sử dụng xăng vẫn sẽ tiêu thụ nhiên liệu khi chạy không tải.
+
+*** Find the Slope and Intercept(đoạn chắn) Using Python ***:
+- Hàm này     np.polyfit()     trả về độ dốc và đoạn chắn.
+VÍ DỤ (tạo ra 2 file là prog.py và data.csv)
++) Đối với file  prog.py:
+import pandas as pd
+import numpy as np
+health_data = pd.read_csv("data.csv", header=0, sep=",")
+x = health_data["Average Pulse"]
+y = health_data["Calories Burnage"]
+slope_intercept = np.polyfit(x, y, 1)
+print(slope_intercept)
++) Đối với file  data.csv:
+Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+30,80,120,240,10,7
+45,85,120,250,10,7
+45,90,130,260,8,7
+60,95,130,270,8,7
+60,100,140,280,0,7
+60,105,140,290,7,8
+60,110,145,300,7,8
+45,115,145,310,8,8
+60,120,150,320,0,8
+45,125,150,330,8,8
+kết quả:  [2. 80.]
+
+#Giải thích:
+Tách các biến Average_Pulse (x) và Calorie_Burnage (y) khỏi health_data.
+Gọi hàm np.polyfit().
+Tham số cuối cùng của hàm chỉ định bậc của hàm, trong trường hợp này là "1".
+
+TIPS: hàm tuyến tính = hàm bậc 1. Trong ví dụ của chúng ta, hàm là tuyến tính, tức là bậc 1. Điều đó có nghĩa là tất cả các hệ số (các số) đều ở lũy thừa của một.
+
+- Bây giờ chúng ta đã tính toán được độ dốc (2) và đoạn chắn (80). Chúng ta có thể viết hàm toán học như sau:
+      f(x) = 2x + 80
+ Nhiệm vụ:
+Bây giờ, chúng ta muốn dự đoán lượng calo bị đốt cháy nếu nhịp tim trung bình là 135.
+Hãy nhớ rằng giá trị cắt là một hằng số. Hằng số là một con số không thay đổi.
+Bây giờ chúng ta có thể thay thế đầu vào x bằng 135:
+      f(135) = 2 * 135 + 80 = 350
+==> Nếu nhịp tim trung bình là 135 thì lượng calo đốt cháy là 350.
+
+*** Define the Mathematical Function in Python( Định nghĩa hàm toán học trong Python) ***:
+VÍ DỤ: (Đây là hàm toán học chính xác giống vậy, nhưng bằng Python. Hàm trả về 2*x + 80, với x là đầu vào:)
+def my_function(x):
+    return 2*x + 80
+print(my_function(135)
+kết quả:  350
+
+*** Plot a New Graph in Python(Vẽ đồ thị mới trong Python) ***:
+- Ở đây, chúng ta vẽ cùng một biểu đồ như trước đó, nhưng định dạng trục một chút.
+  (Giá trị lớn nhất của trục y hiện là 400 và của trục x là 150:)
+VÍ DỤ: (tạo là 2 file  prog.py và data.csv):
++) Đối với file  Prog.py:
+#Three lines to make our compiler able to draw:
+import sys
+import matplotlib
+matplotlib.use('Agg')
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+health_data = pd.read_csv("data.csv", header=0, sep=",")
+
+health_data.plot(x = "Average_Pulse", y = "Calorie_Burnage", kind="line")
+plt.ylim(ymin=0, ymax=400)
+plt.xlim(xmin=0, xmax=150)
+plt.show()
+#Two  lines to make our compiler able to draw:
+plt.savefig(sys.stdout.buffer)
+sys.stdout.flush()
++) Đối với file  data.csv:
+Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+30,80,120,240,10,7
+45,85,120,250,10,7
+45,90,130,260,8,7
+60,95,130,270,8,7
+60,100,140,280,0,7
+60,105,140,290,7,8
+60,110,145,300,7,8
+45,115,145,310,8,8
+60,120,150,320,0,8
+45,125,150,330,8,8
+kết quả:   https://www.w3schools.com/datascience/img_tryit_plot2.png
+
+# Giải thích:
+      Nhập mô-đun pyplot của thư viện matplotlib
+      Vẽ biểu đồ dữ liệu từ Average_Pulse so với Calorie_Burnage
+       kind='line'cho chúng ta biết loại cốt truyện nào chúng ta muốn. Ở đây, chúng ta muốn có một đường thẳng
+       plt.ylim() và plt.xlim() cho chúng ta biết giá trị nào chúng ta muốn trục bắt đầu và dừng lại.
+       plt.show() cho chúng ta thấy kết quả
+
+*** Data Science - Intro to Statistics ***:
+- Thống kê là khoa học phân tích dữ liệu.
+- Khi chúng ta đã tạo ra một mô hình dự đoán, chúng ta phải đánh giá độ tin cậy của dự đoán đó.
+=> Suy cho cùng, một dự đoán có giá trị gì nếu chúng ta không thể tin cậy vào nó?
+
+*** Descriptive Statistics(Thống kê mô tả) ***:
+- Đầu tiên chúng ta sẽ tìm hiểu một số thống kê mô tả cơ bản.
+- Thống kê mô tả tóm tắt các tính năng quan trọng của một tập dữ liệu như:
+       Đếm
+       Tổng
+    Độ lệch chuẩn
+    Phần trăm
+   Trung bình
+     Vân vân..
+- Đây là điểm khởi đầu tốt để làm quen với dữ liệu.
++) Chúng ta có thể sử dụng hàm    describe()     trong Python để tóm tắt dữ liệu:
+VÍ DỤ: (Tạo ra 2 file là  prog.py và data.csv)
++) Đối với file  prog.py:
+import pandas as pd
+full_health_data = pd.read_csv("data.csv", header=0,sep=",")
+pd.set_option("display.max_columns", None)
+pd.set_option("display.max_rows", None)
+print(full_health_data.describe())
++) Đối với file  data.csv:
+Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+60,110,130,409,0,8
+60,117,145,479,0,8
+60,103,135,340,8,7.5
+45,109,175,282,8,8
+45,117,148,406,0,6.5
+60,102,127,300,0,7.5
+60,110,136,374,0,7.5
+45,104,134,253,0,9
+30,109,133,195,8,8
+60,98,124,269,7.5,8
+60,103,147,329,8,7
+60,100,120,250,0,5
+60,106,128,345,8.5,7.5
+60,104,132,379,8.5,7.5
+60,98,123,275,9,7
+60,98,120,215,6.5,7
+60,100,120,300,9,8
+45,90,112,180,8,8
+60,103,123,323,8,8
+45,97,125,243,8,7
+60,108,131,364,8,7
+45,100,119,282,0,7
+60,130,101,300,8,7
+45,105,132,246,0,8
+60,102,126,334,8,8
+60,100,120,250,8,7
+60,92,118,241,7,6
+60,103,132,353,9,8.5
+60,100,132,280,3,8
+60,102,129,380,3,8
+60,92,115,243,7.5,8
+60,101,124,299,8.5,7.5
+60,93,113,223,8,7
+60,107,136,361,2,8
+60,114,140,415,9,8.5
+60,100,120,300,8,7
+60,100,120,300,7,6
+45,104,129,266,8,7
+60,98,126,286,7.5,7
+60,100,122,329,8,7
+60,111,138,400,8,8
+60,111,131,397,0,8
+60,99,119,273,8,7
+60,109,153,387,8,7
+45,111,136,300,11,7
+45,108,129,298,5,7
+60,111,139,397,0,8
+60,107,136,380,8.5,8
+80,123,146,643,8.5,8
+60,106,130,263,8,8
+60,118,151,486,7,7
+30,136,175,238,0,7.5
+60,121,146,450,5,8
+60,118,121,413,8,7
+45,115,144,305,5,7
+20,153,172,226,0,8
+45,123,152,321,5,8
+210,108,160,1376,8,8
+160,110,137,1034,8,8
+160,109,135,853,8,8
+45,118,141,341,8,8
+20,110,130,131,0,8
+180,90,130,800,0,8
+150,105,135,873,8,8
+150,107,130,816,3,8
+20,106,136,110,3,8
+300,108,143,1500,0,8
+150,97,129,1115,0,8
+90,100,127,700,0,8
+150,97,127,953,0,8
+45,114,146,304,0,8
+90,98,125,563,0,8
+45,105,134,251,0,8
+45,110,141,300,7,7.5
+120,100,130,500,7,7.5
+270,100,131,1729,0,7
+30,159,182,319,5,7.5
+45,149,169,344,0,8
+30,103,139,151,4,8
+120,100,130,500,0,8
+45,100,120,225,8.5,8
+30,151,170,300,0,7
+45,102,136,234,6.5,8
+120,100,157,1000,0,8
+45,129,103,242,5,8
+20,83,107,50,9.5,8
+180,101,127,600,0,7.5
+45,107,137,1200,8,8
+30,90,107,105,7,8
+15,80,100,50,9,8
+20,150,171,127,0,7.5
+20,151,168,229,0,7
+30,95,128,128,8,7.5
+25,152,168,244,0,8
+30,109,131,188,8,7.5
+90,93,124,604,8,8
+20,95,112,77,8,8
+90,90,110,500,8,8
+90,90,100,500,0,8
+90,90,100,500,5,8
+30,92,108,92,8,8
+30,93,128,124,8,8
+180,90,120,800,8,8
+30,90,120,86,7,8
+90,90,120,500,8,8
+210,137,184,1860,0,7.5
+60,102,124,325,0,8
+45,107,124,275,0,8
+15,124,139,124,5,6
+60,108,131,367,0,8
+60,108,151,351,0,8
+60,116,141,443,0,8
+60,97,122,277,0,8
+60,105,125,353,0,8
+60,103,124,332,0,8
+30,112,137,193,0,8
+45,100,120,100,0,7.5
+60,119,169,336,0,8
+60,107,127,344,0,8
+60,111,151,368,0,8
+60,98,122,271,0,8
+60,97,124,275,0,8
+60,109,127,382,0,6
+90,99,125,466,0,7.5
+60,114,151,384,0,12
+60,104,134,342,0,7.5
+60,107,138,357,0,7.5
+60,103,133,335,0,7.5
+60,106,132,327,0,7.5
+60,103,136,339,0,7.5
+20,136,156,189,8.5,7.5
+45,117,143,317,0,8
+45,115,137,318,0,7.5
+45,113,138,308,0,7
+20,141,162,222,0,7.5
+60,108,135,390,0,8
+60,97,127,288,0,8
+45,100,120,250,0,8
+45,122,149,335,0,7.5
+60,136,170,470,8,8
+45,106,126,270,8,8
+60,107,136,400,9.5,7
+60,112,146,361,9,7.5
+30,103,127,185,9,7.5
+60,110,150,409,8,7
+60,106,134,343,8,8.5
+60,109,129,353,8,8
+60,109,138,374,8,6
+30,150,167,275,0,9
+60,105,128,328,9,8
+60,97,131,270,9,8
+60,100,120,270,8,8
+60,114,150,382,0,8
+30,80,120,240,10,7
+30,85,120,250,10,7
+45,90,130,260,8,7
+45,95,130,270,8,7
+45,100,140,280,0,7
+60,105,140,290,7,8
+60,110,145,300,7,8
+60,115,145,310,8,8
+75,120,150,320,0,8
+75,125,150,330,8,8
+kết quả:   https://www.w3schools.com/datascience/img_stat_describe.png
+
+*** Data Science - Statistics Percentiles ***:
+*** 25%, 50% và 75% - Percentiles ***:
+- Trong thống kê, phần trăm được sử dụng để cung cấp cho bạn con số mô tả giá trị mà một phần trăm giá trị nhất định thấp hơn.
+     https://www.w3schools.com/datascience/img_stat_percentiles.png
+- Chúng ta hãy thử giải thích bằng một số ví dụ, sử dụng Average_Pulse.
+Phần trăm 25% của Average_Pulse có nghĩa là 25% trong số tất cả các buổi tập có nhịp mạch trung bình là 100 nhịp mỗi phút hoặc thấp hơn. Nếu chúng ta đảo ngược câu lệnh, điều đó có nghĩa là 75% trong số tất cả các buổi tập có nhịp mạch trung bình là 100 nhịp mỗi phút hoặc cao hơn
+Phần trăm 75% của Average_Pulse có nghĩa là 75% trong số tất cả các buổi tập có nhịp mạch trung bình là 111 hoặc thấp hơn. Nếu chúng ta đảo ngược câu lệnh, điều đó có nghĩa là 25% trong số tất cả các buổi tập có nhịp mạch trung bình là 111 nhịp mỗi phút hoặc cao hơn
+
+Task: Find the 10% percentile for Max_Pulse (Tạo ra 2 file là  prog.py và  data.csv)
++) Đối với file  prog.py:
+import pandas as pd
+import numpy as np
+full_health_data = pd.read_csv("data.csv", header=0, sep=",")
+Max_Pulse = full_heath_data["Max_Pulse"]
+percentile10 = np.percentile(Max_Pulse, 10)
+print(percentile10)
++) Đối với file  data.csv:
+Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+60,110,130,409,0,8
+60,117,145,479,0,8
+60,103,135,340,8,7.5
+45,109,175,282,8,8
+45,117,148,406,0,6.5
+60,102,127,300,0,7.5
+60,110,136,374,0,7.5
+45,104,134,253,0,9
+30,109,133,195,8,8
+60,98,124,269,7.5,8
+60,103,147,329,8,7
+60,100,120,250,0,5
+60,106,128,345,8.5,7.5
+60,104,132,379,8.5,7.5
+60,98,123,275,9,7
+60,98,120,215,6.5,7
+60,100,120,300,9,8
+45,90,112,180,8,8
+60,103,123,323,8,8
+45,97,125,243,8,7
+60,108,131,364,8,7
+45,100,119,282,0,7
+60,130,101,300,8,7
+45,105,132,246,0,8
+60,102,126,334,8,8
+60,100,120,250,8,7
+60,92,118,241,7,6
+60,103,132,353,9,8.5
+60,100,132,280,3,8
+60,102,129,380,3,8
+60,92,115,243,7.5,8
+60,101,124,299,8.5,7.5
+60,93,113,223,8,7
+60,107,136,361,2,8
+60,114,140,415,9,8.5
+60,100,120,300,8,7
+60,100,120,300,7,6
+45,104,129,266,8,7
+60,98,126,286,7.5,7
+60,100,122,329,8,7
+60,111,138,400,8,8
+60,111,131,397,0,8
+60,99,119,273,8,7
+60,109,153,387,8,7
+45,111,136,300,11,7
+45,108,129,298,5,7
+60,111,139,397,0,8
+60,107,136,380,8.5,8
+80,123,146,643,8.5,8
+60,106,130,263,8,8
+60,118,151,486,7,7
+30,136,175,238,0,7.5
+60,121,146,450,5,8
+60,118,121,413,8,7
+45,115,144,305,5,7
+20,153,172,226,0,8
+45,123,152,321,5,8
+210,108,160,1376,8,8
+160,110,137,1034,8,8
+160,109,135,853,8,8
+45,118,141,341,8,8
+20,110,130,131,0,8
+180,90,130,800,0,8
+150,105,135,873,8,8
+150,107,130,816,3,8
+20,106,136,110,3,8
+300,108,143,1500,0,8
+150,97,129,1115,0,8
+90,100,127,700,0,8
+150,97,127,953,0,8
+45,114,146,304,0,8
+90,98,125,563,0,8
+45,105,134,251,0,8
+45,110,141,300,7,7.5
+120,100,130,500,7,7.5
+270,100,131,1729,0,7
+30,159,182,319,5,7.5
+45,149,169,344,0,8
+30,103,139,151,4,8
+120,100,130,500,0,8
+45,100,120,225,8.5,8
+30,151,170,300,0,7
+45,102,136,234,6.5,8
+120,100,157,1000,0,8
+45,129,103,242,5,8
+20,83,107,50,9.5,8
+180,101,127,600,0,7.5
+45,107,137,1200,8,8
+30,90,107,105,7,8
+15,80,100,50,9,8
+20,150,171,127,0,7.5
+20,151,168,229,0,7
+30,95,128,128,8,7.5
+25,152,168,244,0,8
+30,109,131,188,8,7.5
+90,93,124,604,8,8
+20,95,112,77,8,8
+90,90,110,500,8,8
+90,90,100,500,0,8
+90,90,100,500,5,8
+30,92,108,92,8,8
+30,93,128,124,8,8
+180,90,120,800,8,8
+30,90,120,86,7,8
+90,90,120,500,8,8
+210,137,184,1860,0,7.5
+60,102,124,325,0,8
+45,107,124,275,0,8
+15,124,139,124,5,6
+60,108,131,367,0,8
+60,108,151,351,0,8
+60,116,141,443,0,8
+60,97,122,277,0,8
+60,105,125,353,0,8
+60,103,124,332,0,8
+30,112,137,193,0,8
+45,100,120,100,0,7.5
+60,119,169,336,0,8
+60,107,127,344,0,8
+60,111,151,368,0,8
+60,98,122,271,0,8
+60,97,124,275,0,8
+60,109,127,382,0,6
+90,99,125,466,0,7.5
+60,114,151,384,0,12
+60,104,134,342,0,7.5
+60,107,138,357,0,7.5
+60,103,133,335,0,7.5
+60,106,132,327,0,7.5
+60,103,136,339,0,7.5
+20,136,156,189,8.5,7.5
+45,117,143,317,0,8
+45,115,137,318,0,7.5
+45,113,138,308,0,7
+20,141,162,222,0,7.5
+60,108,135,390,0,8
+60,97,127,288,0,8
+45,100,120,250,0,8
+45,122,149,335,0,7.5
+60,136,170,470,8,8
+45,106,126,270,8,8
+60,107,136,400,9.5,7
+60,112,146,361,9,7.5
+30,103,127,185,9,7.5
+60,110,150,409,8,7
+60,106,134,343,8,8.5
+60,109,129,353,8,8
+60,109,138,374,8,6
+30,150,167,275,0,9
+60,105,128,328,9,8
+60,97,131,270,9,8
+60,100,120,270,8,8
+60,114,150,382,0,8
+30,80,120,240,10,7
+30,85,120,250,10,7
+45,90,130,260,8,7
+45,95,130,270,8,7
+45,100,140,280,0,7
+60,105,140,290,7,8
+60,110,145,300,7,8
+60,115,145,310,8,8
+75,120,150,320,0,8
+75,125,150,330,8,8
+kết quả:   120.0
+
+# Giải thích:
+     Max_Pulse = full_health_data["Max_Pulse"] - Tách biến Max_Pulse khỏi toàn bộ tập dữ liệu sức khỏe.
+     np.percentile() được sử dụng để xác định rằng chúng ta muốn lấy phần trăm thứ 10 từ Max_Pulse.
+     Phần trăm thứ 10% của Max_Pulse là 120. Điều này có nghĩa là 10% trong số tất cả các buổi đào tạo có Max_Pulse là 120 hoặc thấp hơn.
+
+*** Data Science - Statistics Standard Deviation(Thống kê độ lệch chuẩn) ***:
+- Độ lệch chuẩn là con số mô tả mức độ phân tán của các quan sát.
+Ví dụ như hình bên:  https://www.w3schools.com/datascience/img_stat_std.png
+    - Một hàm toán học sẽ gặp khó khăn trong việc dự đoán các giá trị chính xác nếu các quan sát "phân tán". Độ lệch chuẩn là thước đo mức độ không chắc chắn.
+    - Độ lệch chuẩn thấp có nghĩa là hầu hết các con số đều gần với giá trị trung bình (trung bình cộng).
+    - Độ lệch chuẩn cao có nghĩa là các giá trị được phân bổ trên một phạm vi rộng hơn.
+
+TIPS: Độ lệch chuẩn thường được biểu thị bằng ký hiệu Signma:  σ
+
+- Chúng ta có thể sử dụng hàm    std()     từ Numpy để tìm độ lệch chuẩn của một biến:
+VÍ DỤ: (Tạo ra 2 file là  prog.py và data.csv)
++) Đối với file  prog.py:
+import pandas as pd
+import numpy as np
+full_health_data = pd.read_csv("data.csv", header=0, sep=",")
+std = np.std(full_health_data)
+print(std)
++)Đối với file  data.csv:
+Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+60,110,130,409,0,8
+60,117,145,479,0,8
+60,103,135,340,8,7.5
+45,109,175,282,8,8
+45,117,148,406,0,6.5
+60,102,127,300,0,7.5
+60,110,136,374,0,7.5
+45,104,134,253,0,9
+30,109,133,195,8,8
+60,98,124,269,7.5,8
+60,103,147,329,8,7
+60,100,120,250,0,5
+60,106,128,345,8.5,7.5
+60,104,132,379,8.5,7.5
+60,98,123,275,9,7
+60,98,120,215,6.5,7
+60,100,120,300,9,8
+45,90,112,180,8,8
+60,103,123,323,8,8
+45,97,125,243,8,7
+60,108,131,364,8,7
+45,100,119,282,0,7
+60,130,101,300,8,7
+45,105,132,246,0,8
+60,102,126,334,8,8
+60,100,120,250,8,7
+60,92,118,241,7,6
+60,103,132,353,9,8.5
+60,100,132,280,3,8
+60,102,129,380,3,8
+60,92,115,243,7.5,8
+60,101,124,299,8.5,7.5
+60,93,113,223,8,7
+60,107,136,361,2,8
+60,114,140,415,9,8.5
+60,100,120,300,8,7
+60,100,120,300,7,6
+45,104,129,266,8,7
+60,98,126,286,7.5,7
+60,100,122,329,8,7
+60,111,138,400,8,8
+60,111,131,397,0,8
+60,99,119,273,8,7
+60,109,153,387,8,7
+45,111,136,300,11,7
+45,108,129,298,5,7
+60,111,139,397,0,8
+60,107,136,380,8.5,8
+80,123,146,643,8.5,8
+60,106,130,263,8,8
+60,118,151,486,7,7
+30,136,175,238,0,7.5
+60,121,146,450,5,8
+60,118,121,413,8,7
+45,115,144,305,5,7
+20,153,172,226,0,8
+45,123,152,321,5,8
+210,108,160,1376,8,8
+160,110,137,1034,8,8
+160,109,135,853,8,8
+45,118,141,341,8,8
+20,110,130,131,0,8
+180,90,130,800,0,8
+150,105,135,873,8,8
+150,107,130,816,3,8
+20,106,136,110,3,8
+300,108,143,1500,0,8
+150,97,129,1115,0,8
+90,100,127,700,0,8
+150,97,127,953,0,8
+45,114,146,304,0,8
+90,98,125,563,0,8
+45,105,134,251,0,8
+45,110,141,300,7,7.5
+120,100,130,500,7,7.5
+270,100,131,1729,0,7
+30,159,182,319,5,7.5
+45,149,169,344,0,8
+30,103,139,151,4,8
+120,100,130,500,0,8
+45,100,120,225,8.5,8
+30,151,170,300,0,7
+45,102,136,234,6.5,8
+120,100,157,1000,0,8
+45,129,103,242,5,8
+20,83,107,50,9.5,8
+180,101,127,600,0,7.5
+45,107,137,1200,8,8
+30,90,107,105,7,8
+15,80,100,50,9,8
+20,150,171,127,0,7.5
+20,151,168,229,0,7
+30,95,128,128,8,7.5
+25,152,168,244,0,8
+30,109,131,188,8,7.5
+90,93,124,604,8,8
+20,95,112,77,8,8
+90,90,110,500,8,8
+90,90,100,500,0,8
+90,90,100,500,5,8
+30,92,108,92,8,8
+30,93,128,124,8,8
+180,90,120,800,8,8
+30,90,120,86,7,8
+90,90,120,500,8,8
+210,137,184,1860,0,7.5
+60,102,124,325,0,8
+45,107,124,275,0,8
+15,124,139,124,5,6
+60,108,131,367,0,8
+60,108,151,351,0,8
+60,116,141,443,0,8
+60,97,122,277,0,8
+60,105,125,353,0,8
+60,103,124,332,0,8
+30,112,137,193,0,8
+45,100,120,100,0,7.5
+60,119,169,336,0,8
+60,107,127,344,0,8
+60,111,151,368,0,8
+60,98,122,271,0,8
+60,97,124,275,0,8
+60,109,127,382,0,6
+90,99,125,466,0,7.5
+60,114,151,384,0,12
+60,104,134,342,0,7.5
+60,107,138,357,0,7.5
+60,103,133,335,0,7.5
+60,106,132,327,0,7.5
+60,103,136,339,0,7.5
+20,136,156,189,8.5,7.5
+45,117,143,317,0,8
+45,115,137,318,0,7.5
+45,113,138,308,0,7
+20,141,162,222,0,7.5
+60,108,135,390,0,8
+60,97,127,288,0,8
+45,100,120,250,0,8
+45,122,149,335,0,7.5
+60,136,170,470,8,8
+45,106,126,270,8,8
+60,107,136,400,9.5,7
+60,112,146,361,9,7.5
+30,103,127,185,9,7.5
+60,110,150,409,8,7
+60,106,134,343,8,8.5
+60,109,129,353,8,8
+60,109,138,374,8,6
+30,150,167,275,0,9
+60,105,128,328,9,8
+60,97,131,270,9,8
+60,100,120,270,8,8
+60,114,150,382,0,8
+30,80,120,240,10,7
+30,85,120,250,10,7
+45,90,130,260,8,7
+45,95,130,270,8,7
+45,100,140,280,0,7
+60,105,140,290,7,8
+60,110,145,300,7,8
+60,115,145,310,8,8
+75,120,150,320,0,8
+75,125,150,330,8,8
+kết quả:  https://www.w3schools.com/datascience/img_stat_std2.png
+
++) Coefficient of Variation(Hệ số biến thiên):
+- Hệ số biến thiên được sử dụng để biến độ lệch chuẩn lớn đến mức nào.
+- Về mặt toán học, hệ số biến thiên được định nghĩa như sau:
+       Coefficient of Variation = Standard Deviation / Mean
+VÍ DỤ: (Tạo ra 2 file là  prog.py và data.csv)
++) Đối với file  prog.py:
++) Đối với fileimport pandas as pd
+import numpy as np
+full_health_data = pd.read_csv("data.csv", header=0, sep=",")
+cv = np.std(full_health_data) / np.mean(full_health_data)          #mean trong toán nghĩa là  trung bình
+print(cv)
+  data.csv:
+Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+60,110,130,409,0,8
+60,117,145,479,0,8
+60,103,135,340,8,7.5
+45,109,175,282,8,8
+45,117,148,406,0,6.5
+60,102,127,300,0,7.5
+60,110,136,374,0,7.5
+45,104,134,253,0,9
+30,109,133,195,8,8
+60,98,124,269,7.5,8
+60,103,147,329,8,7
+60,100,120,250,0,5
+60,106,128,345,8.5,7.5
+60,104,132,379,8.5,7.5
+60,98,123,275,9,7
+60,98,120,215,6.5,7
+60,100,120,300,9,8
+45,90,112,180,8,8
+60,103,123,323,8,8
+45,97,125,243,8,7
+60,108,131,364,8,7
+45,100,119,282,0,7
+60,130,101,300,8,7
+45,105,132,246,0,8
+60,102,126,334,8,8
+60,100,120,250,8,7
+60,92,118,241,7,6
+60,103,132,353,9,8.5
+60,100,132,280,3,8
+60,102,129,380,3,8
+60,92,115,243,7.5,8
+60,101,124,299,8.5,7.5
+60,93,113,223,8,7
+60,107,136,361,2,8
+60,114,140,415,9,8.5
+60,100,120,300,8,7
+60,100,120,300,7,6
+45,104,129,266,8,7
+60,98,126,286,7.5,7
+60,100,122,329,8,7
+60,111,138,400,8,8
+60,111,131,397,0,8
+60,99,119,273,8,7
+60,109,153,387,8,7
+45,111,136,300,11,7
+45,108,129,298,5,7
+60,111,139,397,0,8
+60,107,136,380,8.5,8
+80,123,146,643,8.5,8
+60,106,130,263,8,8
+60,118,151,486,7,7
+30,136,175,238,0,7.5
+60,121,146,450,5,8
+60,118,121,413,8,7
+45,115,144,305,5,7
+20,153,172,226,0,8
+45,123,152,321,5,8
+210,108,160,1376,8,8
+160,110,137,1034,8,8
+160,109,135,853,8,8
+45,118,141,341,8,8
+20,110,130,131,0,8
+180,90,130,800,0,8
+150,105,135,873,8,8
+150,107,130,816,3,8
+20,106,136,110,3,8
+300,108,143,1500,0,8
+150,97,129,1115,0,8
+90,100,127,700,0,8
+150,97,127,953,0,8
+45,114,146,304,0,8
+90,98,125,563,0,8
+45,105,134,251,0,8
+45,110,141,300,7,7.5
+120,100,130,500,7,7.5
+270,100,131,1729,0,7
+30,159,182,319,5,7.5
+45,149,169,344,0,8
+30,103,139,151,4,8
+120,100,130,500,0,8
+45,100,120,225,8.5,8
+30,151,170,300,0,7
+45,102,136,234,6.5,8
+120,100,157,1000,0,8
+45,129,103,242,5,8
+20,83,107,50,9.5,8
+180,101,127,600,0,7.5
+45,107,137,1200,8,8
+30,90,107,105,7,8
+15,80,100,50,9,8
+20,150,171,127,0,7.5
+20,151,168,229,0,7
+30,95,128,128,8,7.5
+25,152,168,244,0,8
+30,109,131,188,8,7.5
+90,93,124,604,8,8
+20,95,112,77,8,8
+90,90,110,500,8,8
+90,90,100,500,0,8
+90,90,100,500,5,8
+30,92,108,92,8,8
+30,93,128,124,8,8
+180,90,120,800,8,8
+30,90,120,86,7,8
+90,90,120,500,8,8
+210,137,184,1860,0,7.5
+60,102,124,325,0,8
+45,107,124,275,0,8
+15,124,139,124,5,6
+60,108,131,367,0,8
+60,108,151,351,0,8
+60,116,141,443,0,8
+60,97,122,277,0,8
+60,105,125,353,0,8
+60,103,124,332,0,8
+30,112,137,193,0,8
+45,100,120,100,0,7.5
+60,119,169,336,0,8
+60,107,127,344,0,8
+60,111,151,368,0,8
+60,98,122,271,0,8
+60,97,124,275,0,8
+60,109,127,382,0,6
+90,99,125,466,0,7.5
+60,114,151,384,0,12
+60,104,134,342,0,7.5
+60,107,138,357,0,7.5
+60,103,133,335,0,7.5
+60,106,132,327,0,7.5
+60,103,136,339,0,7.5
+20,136,156,189,8.5,7.5
+45,117,143,317,0,8
+45,115,137,318,0,7.5
+45,113,138,308,0,7
+20,141,162,222,0,7.5
+60,108,135,390,0,8
+60,97,127,288,0,8
+45,100,120,250,0,8
+45,122,149,335,0,7.5
+60,136,170,470,8,8
+45,106,126,270,8,8
+60,107,136,400,9.5,7
+60,112,146,361,9,7.5
+30,103,127,185,9,7.5
+60,110,150,409,8,7
+60,106,134,343,8,8.5
+60,109,129,353,8,8
+60,109,138,374,8,6
+30,150,167,275,0,9
+60,105,128,328,9,8
+60,97,131,270,9,8
+60,100,120,270,8,8
+60,114,150,382,0,8
+30,80,120,240,10,7
+30,85,120,250,10,7
+45,90,130,260,8,7
+45,95,130,270,8,7
+45,100,140,280,0,7
+60,105,140,290,7,8
+60,110,145,300,7,8
+60,115,145,310,8,8
+75,120,150,320,0,8
+75,125,150,330,8,8
+kết quả:  https://www.w3schools.com/datascience/img_stat_cv.png
+==> Từ kết quả đầu ra chúng ta có thể thấy rằng các biến Duration, Calorie_Burnage và Hours_Work có độ lệch chuẩn cao hơn so với Average_Pulse, Max_Pulse, Hours_Sleep.
+
+*** Data Science - Statistics Variance(Thống kê phương sai) ***
+*** Variance ***
+- Phương sai là một con số khác biểu thị mức độ phân tán của các giá trị.
+- Trên thực tế, nếu bạn lấy căn bậc hai của phương sai, bạn sẽ có độ lệch chuẩn. Hoặc ngược lại, nếu bạn nhân độ lệch chuẩn với chính nó, bạn sẽ có phương sai!
++) Đầu tiên chúng ta sẽ sử dụng tập dữ liệu có 10 quan sát để đưa ra ví dụ về cách tính phương sai:
+ TIPS: Phương sai thường được biểu diễn bằng kí hiệu Sigma Square:  σ^2
+
++) BƯỚC 1: để tính phương sai: Tìm giá trị trung bình
+ - Chúng tôi muốn tìm phương sai của Average_Pulse.
+1. Tìm giá trị trung bình:
+    (80+85+90+95+100+105+110+115+120+125) / 10 = 102.5
+==> Giá trị trung bình là 102.5
++) BƯỚC 2: đối với mỗi giá trị - Tìm sự khác biệt so với giá trị trung bình
+ 2. Tìm sự khác biệt so với giá trị trung bình của mỗi giá trị:
+     80 - 102.5 =  -22.5
+     85 - 102.5 =  -17.5
+     90 - 102.5 =  -12.5
+     95 - 102.5 =  -7.5
+    100 - 102.5 =  -2.5
+    105 - 102.5 =  2.5
+    110 - 102.5 =  7.5
+    115 - 102.5 =  12.5
+    120 - 102.5 =  17.5
+    125 - 102.5 =  22.5
++) BƯỚC 3: đối với mỗi sự khác biệt - Tìm giá trị bình phương
+3. Tìm giá trị bình phương cho mỗi hiệu:
+     (-22.5)^2 = 506.25
+     (-17.5)^2 = 306.25
+     (-12.5)^2 = 156.25
+     (-7.5)^2 = 56.25
+     (-2.5)^2 = 6.25
+     2.5^2 = 6.25
+     7.5^2 = 56.25
+    12.5^2 = 156.25
+    17.5^2 = 306.25
+    22.5^2 = 506.25
+
+! NOTE !: Chúng ta phải bình phương các giá trị để có được tổng mức chênh lệch.
++) BƯỚC 4: phương sai là số trung bình của các giá trị bình phương này
+4. Tính tổng các giá trị bình phương và tìm giá trị trung bình:
+    (506.25 + 306.25 + 156.25 + 56.25 + 6.25 + 6.25 + 56.25 + 156.25 + 306.25 + 506.25) / 10 = 206.25
+==> Độ lệch chuẩn là  206.25
+
+*** Use Python to Find the Variance of health_data(Sử dụng Python để tìm phương sai của health_data) ***
++) Chúng ta có thể sử dụng hàm     var()    từ Numpy để tìm phương sai (hãy nhớ rằng bây giờ chúng ta sử dụng tập dữ liệu đầu tiên với 10 quan sát):
+VÍ DỤ: (Tạo ra 2 file là  prog.py và data.csv)
++) Đối với file  prog.py:
+import pandas as pd
+import numpy as np
+health_data = pd.read_csv("data.csv", header=0, sep=",")
+var = np.var(health_data)
+print(var)
++) Đối với file  data.csv:
+Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+30,80,120,240,10,7
+45,85,120,250,10,7
+45,90,130,260,8,7
+60,95,130,270,8,7
+60,100,140,280,0,7
+60,105,140,290,7,8
+60,110,145,300,7,8
+45,115,145,310,8,8
+60,120,150,320,0,8
+45,125,150,330,8,8
+kết quả:   https://www.w3schools.com/datascience/img_stat_var.png
+
+*** Use Python to Find the Variance of Full Data Set ***
+VÍ DỤ: (Tạo ra 2 file  prog.py và  data.csv)
++) Đối với file prog.py:
+import pandas as py
+import numpy as np
+full_health_data = pd.read_csv("data.csv", header=0, sep=",")
+var = np.var(full_health_data)
+print(var)
++) Đối với file  data.csv:
+Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+60,110,130,409,0,8
+60,117,145,479,0,8
+60,103,135,340,8,7.5
+45,109,175,282,8,8
+45,117,148,406,0,6.5
+60,102,127,300,0,7.5
+60,110,136,374,0,7.5
+45,104,134,253,0,9
+30,109,133,195,8,8
+60,98,124,269,7.5,8
+60,103,147,329,8,7
+60,100,120,250,0,5
+60,106,128,345,8.5,7.5
+60,104,132,379,8.5,7.5
+60,98,123,275,9,7
+60,98,120,215,6.5,7
+60,100,120,300,9,8
+45,90,112,180,8,8
+60,103,123,323,8,8
+45,97,125,243,8,7
+60,108,131,364,8,7
+45,100,119,282,0,7
+60,130,101,300,8,7
+45,105,132,246,0,8
+60,102,126,334,8,8
+60,100,120,250,8,7
+60,92,118,241,7,6
+60,103,132,353,9,8.5
+60,100,132,280,3,8
+60,102,129,380,3,8
+60,92,115,243,7.5,8
+60,101,124,299,8.5,7.5
+60,93,113,223,8,7
+60,107,136,361,2,8
+60,114,140,415,9,8.5
+60,100,120,300,8,7
+60,100,120,300,7,6
+45,104,129,266,8,7
+60,98,126,286,7.5,7
+60,100,122,329,8,7
+60,111,138,400,8,8
+60,111,131,397,0,8
+60,99,119,273,8,7
+60,109,153,387,8,7
+45,111,136,300,11,7
+45,108,129,298,5,7
+60,111,139,397,0,8
+60,107,136,380,8.5,8
+80,123,146,643,8.5,8
+60,106,130,263,8,8
+60,118,151,486,7,7
+30,136,175,238,0,7.5
+60,121,146,450,5,8
+60,118,121,413,8,7
+45,115,144,305,5,7
+20,153,172,226,0,8
+45,123,152,321,5,8
+210,108,160,1376,8,8
+160,110,137,1034,8,8
+160,109,135,853,8,8
+45,118,141,341,8,8
+20,110,130,131,0,8
+180,90,130,800,0,8
+150,105,135,873,8,8
+150,107,130,816,3,8
+20,106,136,110,3,8
+300,108,143,1500,0,8
+150,97,129,1115,0,8
+90,100,127,700,0,8
+150,97,127,953,0,8
+45,114,146,304,0,8
+90,98,125,563,0,8
+45,105,134,251,0,8
+45,110,141,300,7,7.5
+120,100,130,500,7,7.5
+270,100,131,1729,0,7
+30,159,182,319,5,7.5
+45,149,169,344,0,8
+30,103,139,151,4,8
+120,100,130,500,0,8
+45,100,120,225,8.5,8
+30,151,170,300,0,7
+45,102,136,234,6.5,8
+120,100,157,1000,0,8
+45,129,103,242,5,8
+20,83,107,50,9.5,8
+180,101,127,600,0,7.5
+45,107,137,1200,8,8
+30,90,107,105,7,8
+15,80,100,50,9,8
+20,150,171,127,0,7.5
+20,151,168,229,0,7
+30,95,128,128,8,7.5
+25,152,168,244,0,8
+30,109,131,188,8,7.5
+90,93,124,604,8,8
+20,95,112,77,8,8
+90,90,110,500,8,8
+90,90,100,500,0,8
+90,90,100,500,5,8
+30,92,108,92,8,8
+30,93,128,124,8,8
+180,90,120,800,8,8
+30,90,120,86,7,8
+90,90,120,500,8,8
+210,137,184,1860,0,7.5
+60,102,124,325,0,8
+45,107,124,275,0,8
+15,124,139,124,5,6
+60,108,131,367,0,8
+60,108,151,351,0,8
+60,116,141,443,0,8
+60,97,122,277,0,8
+60,105,125,353,0,8
+60,103,124,332,0,8
+30,112,137,193,0,8
+45,100,120,100,0,7.5
+60,119,169,336,0,8
+60,107,127,344,0,8
+60,111,151,368,0,8
+60,98,122,271,0,8
+60,97,124,275,0,8
+60,109,127,382,0,6
+90,99,125,466,0,7.5
+60,114,151,384,0,12
+60,104,134,342,0,7.5
+60,107,138,357,0,7.5
+60,103,133,335,0,7.5
+60,106,132,327,0,7.5
+60,103,136,339,0,7.5
+20,136,156,189,8.5,7.5
+45,117,143,317,0,8
+45,115,137,318,0,7.5
+45,113,138,308,0,7
+20,141,162,222,0,7.5
+60,108,135,390,0,8
+60,97,127,288,0,8
+45,100,120,250,0,8
+45,122,149,335,0,7.5
+60,136,170,470,8,8
+45,106,126,270,8,8
+60,107,136,400,9.5,7
+60,112,146,361,9,7.5
+30,103,127,185,9,7.5
+60,110,150,409,8,7
+60,106,134,343,8,8.5
+60,109,129,353,8,8
+60,109,138,374,8,6
+30,150,167,275,0,9
+60,105,128,328,9,8
+60,97,131,270,9,8
+60,100,120,270,8,8
+60,114,150,382,0,8
+30,80,120,240,10,7
+30,85,120,250,10,7
+45,90,130,260,8,7
+45,95,130,270,8,7
+45,100,140,280,0,7
+60,105,140,290,7,8
+60,110,145,300,7,8
+60,115,145,310,8,8
+75,120,150,320,0,8
+75,125,150,330,8,8
+kết quả:   https://www.w3schools.com/datascience/img_stat_var_full.png
+
+*** Data Science - Statistics Correlation(Thống kê tương quan) ***
+*** Correlation(Tương quan) ***
+*** Correlation Coefficient ***
+- Hệ số tương quan đo lường mối quan hệ giữa hai biến.
+- Hệ số tương quan không bao giờ có thể nhỏ hơn -1 hoặc cao hơn 1.
+    1 = có mối quan hệ tuyến tính hoàn hảo giữa các biến (như Average_Pulse so với Calorie_Burnage)
+    0 = không có mối quan hệ tuyến tính giữa các biến
+    -1 = có mối quan hệ tuyến tính âm hoàn hảo giữa các biến (ví dụ: Làm việc ít giờ hơn dẫn đến đốt cháy nhiều calo hơn trong một buổi tập luyện)
+
++) VÍ DỤ về mối quan hệ tuyến tính hoàn hảo (Hệ số tương quan  = 1)
+- Lần này chúng ta muốn biểu đồ phân tán, vì vậy chúng ta đổi kind thành "scatter":
+  +) Đối với file  prog.py:
+#Three lines to make our compiler able to draw: 
+import sys
+import matplotlib
+matplotlib.use('Agg')
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+health_data = pd.read_csv("data.csv", header=0, sep=",")
+health_data = data.plot(x = "Average_Pulse", y = "Calorie_Pulse", kind="scatter")
+plt.show()
+#Two  lines to make our compiler able to draw:
+plt.savefig(sys.stdout.buffer)
+sys.stdout.flush()
+   +) Đối với file  data.csv:
+Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+30,80,120,240,10,7
+45,85,120,250,10,7
+45,90,130,260,8,7
+60,95,130,270,8,7
+60,100,140,280,0,7
+60,105,140,290,7,8
+60,110,145,300,7,8
+45,115,145,310,8,8
+60,120,150,320,0,8
+45,125,150,330,8,8
+kết quả:   https://www.w3schools.com/datascience/img_tryit_scatter.png
+==> Như chúng ta đã thấy trước đó, tồn tại mối quan hệ tuyến tính hoàn hảo giữa Average_Pulse và Calorie_Burnage.
+
++) VÍ DỤ về mối quan hệ tuyến tính hoàn hảo âm (Hệ số tương quan = -1)
+- Nếu chúng ta làm việc nhiều giờ hơn, chúng ta có xu hướng đốt cháy ít calo hơn vì chúng ta kiệt sức trước buổi tập luyện.
+- Hệ số tương quan ở đây là -1.
+  +) Chỉ có 1 file  prog.py:
+#Three lines to make our compiler able to draw:
+import sys
+import matplotlib
+matplotlib.use('Agg')
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+negative_corr = {'Hours_Work_Before_Training': [10,9,8,7,6,5,4,3,2,1],
+'Calorie_Burnage': [220,240,260,280,300,320,340,360,380,400]}
+negative_corr = pd.DataFrame(data=negative_corr)
+
+negative_corr.plot(x ='Hours_Work_Before_Training', y='Calorie_Burnage', kind='scatter')
+plt.show()
+
+#Two  lines to make our compiler able to draw:
+plt.savefig(sys.stdout.buffer)
+sys.stdout.flush()
+kết quả:   https://www.w3schools.com/datascience/img_tryit_scatterneg.png
+
++) VÍ DỤ về không có mối quan hệ tuyến tính (Hệ số tương quan = 0)
+- Như bạn thấy, không có mối quan hệ tuyến tính giữa hai biến. Điều này có nghĩa là phiên đào tạo dài hơn không dẫn đến Max_Pulse cao hơn.
+- Hệ số tương quan ở đây là 0.
+   +) Đối với file  prog.py:
+#Three lines to make our compiler able to draw:
+import sys
+import matplotlib
+matplotlib.use("Agg")
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+full_health_data = pd.read_csv("data.csv", header=0, sep=",")
+full_health_data.plot(x="Duration", y="Max_Pulse", kind="scatter")
+plt.show()
+#Two lines to make our compiler able to draw:
+plt.savefig(sys.stdout.buffer)
+sys.stdout.flush()
++) Đối với file  data.csv:
+Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+60,110,130,409,0,8
+60,117,145,479,0,8
+60,103,135,340,8,7.5
+45,109,175,282,8,8
+45,117,148,406,0,6.5
+60,102,127,300,0,7.5
+60,110,136,374,0,7.5
+45,104,134,253,0,9
+30,109,133,195,8,8
+60,98,124,269,7.5,8
+60,103,147,329,8,7
+60,100,120,250,0,5
+60,106,128,345,8.5,7.5
+60,104,132,379,8.5,7.5
+60,98,123,275,9,7
+60,98,120,215,6.5,7
+60,100,120,300,9,8
+45,90,112,180,8,8
+60,103,123,323,8,8
+45,97,125,243,8,7
+60,108,131,364,8,7
+45,100,119,282,0,7
+60,130,101,300,8,7
+45,105,132,246,0,8
+60,102,126,334,8,8
+60,100,120,250,8,7
+60,92,118,241,7,6
+60,103,132,353,9,8.5
+60,100,132,280,3,8
+60,102,129,380,3,8
+60,92,115,243,7.5,8
+60,101,124,299,8.5,7.5
+60,93,113,223,8,7
+60,107,136,361,2,8
+60,114,140,415,9,8.5
+60,100,120,300,8,7
+60,100,120,300,7,6
+45,104,129,266,8,7
+60,98,126,286,7.5,7
+60,100,122,329,8,7
+60,111,138,400,8,8
+60,111,131,397,0,8
+60,99,119,273,8,7
+60,109,153,387,8,7
+45,111,136,300,11,7
+45,108,129,298,5,7
+60,111,139,397,0,8
+60,107,136,380,8.5,8
+80,123,146,643,8.5,8
+60,106,130,263,8,8
+60,118,151,486,7,7
+30,136,175,238,0,7.5
+60,121,146,450,5,8
+60,118,121,413,8,7
+45,115,144,305,5,7
+20,153,172,226,0,8
+45,123,152,321,5,8
+210,108,160,1376,8,8
+160,110,137,1034,8,8
+160,109,135,853,8,8
+45,118,141,341,8,8
+20,110,130,131,0,8
+180,90,130,800,0,8
+150,105,135,873,8,8
+150,107,130,816,3,8
+20,106,136,110,3,8
+300,108,143,1500,0,8
+150,97,129,1115,0,8
+90,100,127,700,0,8
+150,97,127,953,0,8
+45,114,146,304,0,8
+90,98,125,563,0,8
+45,105,134,251,0,8
+45,110,141,300,7,7.5
+120,100,130,500,7,7.5
+270,100,131,1729,0,7
+30,159,182,319,5,7.5
+45,149,169,344,0,8
+30,103,139,151,4,8
+120,100,130,500,0,8
+45,100,120,225,8.5,8
+30,151,170,300,0,7
+45,102,136,234,6.5,8
+120,100,157,1000,0,8
+45,129,103,242,5,8
+20,83,107,50,9.5,8
+180,101,127,600,0,7.5
+45,107,137,1200,8,8
+30,90,107,105,7,8
+15,80,100,50,9,8
+20,150,171,127,0,7.5
+20,151,168,229,0,7
+30,95,128,128,8,7.5
+25,152,168,244,0,8
+30,109,131,188,8,7.5
+90,93,124,604,8,8
+20,95,112,77,8,8
+90,90,110,500,8,8
+90,90,100,500,0,8
+90,90,100,500,5,8
+30,92,108,92,8,8
+30,93,128,124,8,8
+180,90,120,800,8,8
+30,90,120,86,7,8
+90,90,120,500,8,8
+210,137,184,1860,0,7.5
+60,102,124,325,0,8
+45,107,124,275,0,8
+15,124,139,124,5,6
+60,108,131,367,0,8
+60,108,151,351,0,8
+60,116,141,443,0,8
+60,97,122,277,0,8
+60,105,125,353,0,8
+60,103,124,332,0,8
+30,112,137,193,0,8
+45,100,120,100,0,7.5
+60,119,169,336,0,8
+60,107,127,344,0,8
+60,111,151,368,0,8
+60,98,122,271,0,8
+60,97,124,275,0,8
+60,109,127,382,0,6
+90,99,125,466,0,7.5
+60,114,151,384,0,12
+60,104,134,342,0,7.5
+60,107,138,357,0,7.5
+60,103,133,335,0,7.5
+60,106,132,327,0,7.5
+60,103,136,339,0,7.5
+20,136,156,189,8.5,7.5
+45,117,143,317,0,8
+45,115,137,318,0,7.5
+45,113,138,308,0,7
+20,141,162,222,0,7.5
+60,108,135,390,0,8
+60,97,127,288,0,8
+45,100,120,250,0,8
+45,122,149,335,0,7.5
+60,136,170,470,8,8
+45,106,126,270,8,8
+60,107,136,400,9.5,7
+60,112,146,361,9,7.5
+30,103,127,185,9,7.5
+60,110,150,409,8,7
+60,106,134,343,8,8.5
+60,109,129,353,8,8
+60,109,138,374,8,6
+30,150,167,275,0,9
+60,105,128,328,9,8
+60,97,131,270,9,8
+60,100,120,270,8,8
+60,114,150,382,0,8
+30,80,120,240,10,7
+30,85,120,250,10,7
+45,90,130,260,8,7
+45,95,130,270,8,7
+45,100,140,280,0,7
+60,105,140,290,7,8
+60,110,145,300,7,8
+60,115,145,310,8,8
+75,120,150,320,0,8
+75,125,150,330,8,8
+kết quả: Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+
+*** Data Science - Statistics Correlation Matrix(Ma trận tương quan thống kê) ***
+*** Correlation Matrix ***
+- Ma trận là một mảng số được sắp xếp theo hàng và cột.
+- Ma trận tương quan chỉ đơn giản là một bảng hiển thị hệ số tương quan giữa các biến.
+Ví dụ ảnh sau đây:   https://www.w3schools.com/datascience/img_corr_matrix_table.png
+ # Quan Sát:
+       Chúng tôi quan sát thấy rằng Thời lượng và Calorie_Burnage có liên quan chặt chẽ với nhau, với hệ số tương quan là 0,89. Điều này có lý vì chúng ta tập luyện càng lâu thì chúng ta đốt cháy càng nhiều calo
+       Chúng tôi quan sát thấy rằng hầu như không có mối quan hệ tuyến tính giữa Average_Pulse và Calorie_Burnage (hệ số tương quan là 0,02)
+       Chúng ta có thể kết luận rằng Average_Pulse không ảnh hưởng đến Calorie_Burnage không? Không. Chúng ta sẽ quay lại để trả lời câu hỏi này sau!
+
+*** Correlation Matrix in Python(Ma trận tương quan trong Python) ***
++) Chúng ta có thể sử dụng hàm     corr()    trong Python để tạo ma trận tương quan. Chúng ta cũng sử dụng hàm      round()     để làm tròn đầu ra thành hai chữ số thập phân:
+VÍ DỤ: (Tạo ra 2 file là  prog.py và data.csv)
++) Đối với prog.py:
+import pandas as pd
+full_health_data = pd.read_csv("data.csv", header=0, sep=",")
+Corr_Matrix = round(full_health_data.corr(), 2)
+print(Corr_Matrix)
++) Đối với file  data.csv:
+Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+60,110,130,409,0,8
+60,117,145,479,0,8
+60,103,135,340,8,7.5
+45,109,175,282,8,8
+45,117,148,406,0,6.5
+60,102,127,300,0,7.5
+60,110,136,374,0,7.5
+45,104,134,253,0,9
+30,109,133,195,8,8
+60,98,124,269,7.5,8
+60,103,147,329,8,7
+60,100,120,250,0,5
+60,106,128,345,8.5,7.5
+60,104,132,379,8.5,7.5
+60,98,123,275,9,7
+60,98,120,215,6.5,7
+60,100,120,300,9,8
+45,90,112,180,8,8
+60,103,123,323,8,8
+45,97,125,243,8,7
+60,108,131,364,8,7
+45,100,119,282,0,7
+60,130,101,300,8,7
+45,105,132,246,0,8
+60,102,126,334,8,8
+60,100,120,250,8,7
+60,92,118,241,7,6
+60,103,132,353,9,8.5
+60,100,132,280,3,8
+60,102,129,380,3,8
+60,92,115,243,7.5,8
+60,101,124,299,8.5,7.5
+60,93,113,223,8,7
+60,107,136,361,2,8
+60,114,140,415,9,8.5
+60,100,120,300,8,7
+60,100,120,300,7,6
+45,104,129,266,8,7
+60,98,126,286,7.5,7
+60,100,122,329,8,7
+60,111,138,400,8,8
+60,111,131,397,0,8
+60,99,119,273,8,7
+60,109,153,387,8,7
+45,111,136,300,11,7
+45,108,129,298,5,7
+60,111,139,397,0,8
+60,107,136,380,8.5,8
+80,123,146,643,8.5,8
+60,106,130,263,8,8
+60,118,151,486,7,7
+30,136,175,238,0,7.5
+60,121,146,450,5,8
+60,118,121,413,8,7
+45,115,144,305,5,7
+20,153,172,226,0,8
+45,123,152,321,5,8
+210,108,160,1376,8,8
+160,110,137,1034,8,8
+160,109,135,853,8,8
+45,118,141,341,8,8
+20,110,130,131,0,8
+180,90,130,800,0,8
+150,105,135,873,8,8
+150,107,130,816,3,8
+20,106,136,110,3,8
+300,108,143,1500,0,8
+150,97,129,1115,0,8
+90,100,127,700,0,8
+150,97,127,953,0,8
+45,114,146,304,0,8
+90,98,125,563,0,8
+45,105,134,251,0,8
+45,110,141,300,7,7.5
+120,100,130,500,7,7.5
+270,100,131,1729,0,7
+30,159,182,319,5,7.5
+45,149,169,344,0,8
+30,103,139,151,4,8
+120,100,130,500,0,8
+45,100,120,225,8.5,8
+30,151,170,300,0,7
+45,102,136,234,6.5,8
+120,100,157,1000,0,8
+45,129,103,242,5,8
+20,83,107,50,9.5,8
+180,101,127,600,0,7.5
+45,107,137,1200,8,8
+30,90,107,105,7,8
+15,80,100,50,9,8
+20,150,171,127,0,7.5
+20,151,168,229,0,7
+30,95,128,128,8,7.5
+25,152,168,244,0,8
+30,109,131,188,8,7.5
+90,93,124,604,8,8
+20,95,112,77,8,8
+90,90,110,500,8,8
+90,90,100,500,0,8
+90,90,100,500,5,8
+30,92,108,92,8,8
+30,93,128,124,8,8
+180,90,120,800,8,8
+30,90,120,86,7,8
+90,90,120,500,8,8
+210,137,184,1860,0,7.5
+60,102,124,325,0,8
+45,107,124,275,0,8
+15,124,139,124,5,6
+60,108,131,367,0,8
+60,108,151,351,0,8
+60,116,141,443,0,8
+60,97,122,277,0,8
+60,105,125,353,0,8
+60,103,124,332,0,8
+30,112,137,193,0,8
+45,100,120,100,0,7.5
+60,119,169,336,0,8
+60,107,127,344,0,8
+60,111,151,368,0,8
+60,98,122,271,0,8
+60,97,124,275,0,8
+60,109,127,382,0,6
+90,99,125,466,0,7.5
+60,114,151,384,0,12
+60,104,134,342,0,7.5
+60,107,138,357,0,7.5
+60,103,133,335,0,7.5
+60,106,132,327,0,7.5
+60,103,136,339,0,7.5
+20,136,156,189,8.5,7.5
+45,117,143,317,0,8
+45,115,137,318,0,7.5
+45,113,138,308,0,7
+20,141,162,222,0,7.5
+60,108,135,390,0,8
+60,97,127,288,0,8
+45,100,120,250,0,8
+45,122,149,335,0,7.5
+60,136,170,470,8,8
+45,106,126,270,8,8
+60,107,136,400,9.5,7
+60,112,146,361,9,7.5
+30,103,127,185,9,7.5
+60,110,150,409,8,7
+60,106,134,343,8,8.5
+60,109,129,353,8,8
+60,109,138,374,8,6
+30,150,167,275,0,9
+60,105,128,328,9,8
+60,97,131,270,9,8
+60,100,120,270,8,8
+60,114,150,382,0,8
+30,80,120,240,10,7
+30,85,120,250,10,7
+45,90,130,260,8,7
+45,95,130,270,8,7
+45,100,140,280,0,7
+60,105,140,290,7,8
+60,110,145,300,7,8
+60,115,145,310,8,8
+75,120,150,320,0,8
+75,125,150,330,8,8
+kết quả:   https://www.w3schools.com/datascience/img_stat_matrix.png
+
+*** Using a Heatmap(Sử dụng bản đồ nhiệt) ***
+- Hệ số tương quan càng gần 1 thì hình vuông càng xanh.
+- Hệ số tương quan càng gần -1 thì hình vuông càng có màu nâu.
+VÍ DỤ:   https://www.w3schools.com/datascience/img_stat_heatmap.png
+
+*** Use Seaborn to Create a Heatmap(Sử dụng Seaborn để tạo bản đồ nhiệt) ***
+VÍ DỤ:
++) Chỉ tạo 1 file  py:
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+full_health_data = pd.read_csv("dataset.csv", header=0, sep=",")
+correlation_full_health = full_health_data.corr()
+axis_corr = sns.heatmap(correlation_full_health, vmin=-1, vmax=1, center=0, cmap=sns.diverging_palette(50, 500, n=500), square=True)
+plt.show()
+kết quả:    https://www.w3schools.com/datascience/img_ds_heatmap.png
+
+#Giải thích:
+    Nhập thư viện seaborn dưới dạng sns.
+    Sử dụng bộ dữ liệu full_health_data.
+    Sử dụng sns.heatmap() để cho Python biết rằng chúng ta muốn có bản đồ nhiệt để trực quan hóa ma trận tương quan.
+    Sử dụng ma trận tương quan. Xác định giá trị cực đại và cực tiểu của bản đồ nhiệt. Xác định 0 là tâm.
+    Xác định màu sắc bằng sns.diverging_palette. n=500 nghĩa là chúng ta muốn có 500 loại màu trong cùng một bảng màu.
+    square = True nghĩa là chúng ta muốn nhìn thấy hình vuông.
+
+*** Data Science - Statistics Correlation(Thống kê tương quan) vs Causality(Nhân quả) ***
+*** Correlation Does Not Imply Causality(Sự tương quan không ngụ ý nhân quả) ***
+- Hệ số tương quan đo lường mối quan hệ số giữa hai biến.
+- Hệ số tương quan cao (gần 1) không có nghĩa là chúng ta có thể chắc chắn kết luận được mối quan hệ thực sự giữa hai biến.
+  - Một ví dụ điển hình:
+      Vào mùa hè, doanh số bán kem ở bãi biển tăng lên
+      Đồng thời, tai nạn đuối nước cũng tăng theo
+
+*** The Beach Example In Python(VÍ DỤ về bãi biển trong Python) ***
++) Chỉ tạo 1 file py:
+#Three lines to make out compiler able to draw:
+import sys
+import matplotlib
+matplotlib.use("Agg")
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+Drowning_Accident = [20,40,60,80,100,120,140,160,180,200]
+Ice_Cream_Sale = [20,40,60,80,100,120,140,160,180,200]
+Drowning = {"Drowning_Accident": [20,40,60,80,100,120,140,160,180,200],
+"Ice_Cream_Sale":  [20,40,60,80,100,120,140,160,180,200]}
+Drowning = pd.DataFrame(data=Drowning)
+
+Drowning.plot(x="Ice_Cream_Sale", y="Drowning_Accident", kind="scatter")
+plt.show()
+correlation_beach = Drowning.corr()
+print(correlation_beach)
+#Two  lines to make our compiler able to draw:
+plt.savefig(sys.stdout.buffer)
+sys.stdout.flush()
+kết quả:    https://try.w3schools.com/try_python_img.php?id=908119079
+
+*** Correlation vs Causality - The Beach Example(Tương quan so với nhân quả - Ví dụ về bãi biển) ***
+- Nói cách khác: chúng ta có thể sử dụng doanh số bán kem để dự đoán tai nạn đuối nước không?
+     Câu trả lời là - Có lẽ là không
+- Có khả năng là hai biến này vô tình có mối tương quan với nhau.
+? Vậy thì nguyên nhân nào gây ra đuối nước ?
+       Người bơi không chuyên nghiệp
+       Sóng
+       Chuột rút
+       Rối loạn co giật
+       Thiếu sự giám sát
+       Sử dụng rượu (lạm dụng)
+       vân vân...
+
+Chúng ta hãy đảo ngược lập luận:
+Hệ số tương quan thấp (gần bằng 0) có nghĩa là sự thay đổi của x không ảnh hưởng đến y không?
+
+Quay lại câu hỏi:
+Chúng ta có thể kết luận rằng Average_Pulse không ảnh hưởng đến Calorie_Burnage do hệ số tương quan thấp không?
+Câu trả lời là không.
+
+Có một sự khác biệt quan trọng giữa tương quan và quan hệ nhân quả:
+   Hệ số tương quan là một con số đo lường mức độ liên quan chặt chẽ của dữ liệu.
+   Nguyên nhân là kết luận rằng x gây ra y.
+
+TIPS:  Luôn suy nghĩ nghiêm túc về khái niệm nhân quả trước khi đưa ra dự đoán!
+
+*** Data Science - Linear Regression(Hồi Quy Tuyến Tính) ***
+- Thuật ngữ hồi quy được sử dụng khi bạn cố gắng tìm mối quan hệ giữa các biến.
+- Trong Học máy và mô hình thống kê, mối quan hệ đó được sử dụng để dự đoán kết quả của các sự kiện.
++) Trong mô-đun này, chúng ta sẽ đề cập đến những câu hỏi sau:
+      Chúng ta có thể kết luận rằng Average_Pulse và Duration có liên quan đến Calorie_Burnage không?
+      Chúng ta có thể sử dụng Average_Pulse và Duration để dự đoán Calorie_Burnage không?
+
+*** Least Square Method(Phương pháp bình phương nhỏ nhất) ***
+- Hồi quy tuyến tính sử dụng phương pháp bình phương nhỏ nhất.
+- Khái niệm này là vẽ một đường thẳng qua tất cả các điểm dữ liệu đã vẽ. Đường thẳng được định vị theo cách giảm thiểu khoảng cách đến tất cả các điểm dữ liệu.
+==> Khoảng cách này được gọi là "phần dư" hoặc "lỗi".
++) Các đường đứt nét màu đỏ biểu thị khoảng cách từ các điểm dữ liệu đến hàm toán học được vẽ.
+VÍ DỤ:   https://www.w3schools.com/datascience/img_least_square.png
+
+*** Linear Regression Using One Explanatory Variable(Hồi quy tuyến tính sử dụng một biến giải thích) ***
+VÍ DỤ: (Tạo ra 2 file là  prog.py và data.csv)
++) Đối với file  prog.py:
+#Three lines to make our compiler able to draw:
+import sys
+import matplotlib
+matplotlib.use("Agg")
+
+import pandas as pd
+import matplotlib as plt
+from scipy import stats
+full_health_data = pd.read.csv("data.csv", header = 0, sep=",")
+x = full_health_data["Average_Pulse"]
+y = full_health_data["Calorie_Burnage"]
+slope, intercept, r, p, std_err = stats.linregress(x, y)
+def myfunc(x):
+  return slope * x + intercept
+mymodel = list(map(myfunc, x))
+plt.scatter(x, y)
+plt.plot(x, mymodel)
+plt.ylim(ymin=0, ymax=2000)
+plt.xlim(xmin=0, xmax=200)
+plt.xlabel("Average_Pulse")
+plt.ylabel("Calorie_Burnage")
+plt.show()
+#Two lines to make our compiler able to draw:
+plt.savefig(sys.stdout.buffer)
+sys.stdout.flush()
++) Đối với file  data.csv:
+Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+60,110,130,409,0,8
+60,117,145,479,0,8
+60,103,135,340,8,7.5
+45,109,175,282,8,8
+45,117,148,406,0,6.5
+60,102,127,300,0,7.5
+60,110,136,374,0,7.5
+45,104,134,253,0,9
+30,109,133,195,8,8
+60,98,124,269,7.5,8
+60,103,147,329,8,7
+60,100,120,250,0,5
+60,106,128,345,8.5,7.5
+60,104,132,379,8.5,7.5
+60,98,123,275,9,7
+60,98,120,215,6.5,7
+60,100,120,300,9,8
+45,90,112,180,8,8
+60,103,123,323,8,8
+45,97,125,243,8,7
+60,108,131,364,8,7
+45,100,119,282,0,7
+60,130,101,300,8,7
+45,105,132,246,0,8
+60,102,126,334,8,8
+60,100,120,250,8,7
+60,92,118,241,7,6
+60,103,132,353,9,8.5
+60,100,132,280,3,8
+60,102,129,380,3,8
+60,92,115,243,7.5,8
+60,101,124,299,8.5,7.5
+60,93,113,223,8,7
+60,107,136,361,2,8
+60,114,140,415,9,8.5
+60,100,120,300,8,7
+60,100,120,300,7,6
+45,104,129,266,8,7
+60,98,126,286,7.5,7
+60,100,122,329,8,7
+60,111,138,400,8,8
+60,111,131,397,0,8
+60,99,119,273,8,7
+60,109,153,387,8,7
+45,111,136,300,11,7
+45,108,129,298,5,7
+60,111,139,397,0,8
+60,107,136,380,8.5,8
+80,123,146,643,8.5,8
+60,106,130,263,8,8
+60,118,151,486,7,7
+30,136,175,238,0,7.5
+60,121,146,450,5,8
+60,118,121,413,8,7
+45,115,144,305,5,7
+20,153,172,226,0,8
+45,123,152,321,5,8
+210,108,160,1376,8,8
+160,110,137,1034,8,8
+160,109,135,853,8,8
+45,118,141,341,8,8
+20,110,130,131,0,8
+180,90,130,800,0,8
+150,105,135,873,8,8
+150,107,130,816,3,8
+20,106,136,110,3,8
+300,108,143,1500,0,8
+150,97,129,1115,0,8
+90,100,127,700,0,8
+150,97,127,953,0,8
+45,114,146,304,0,8
+90,98,125,563,0,8
+45,105,134,251,0,8
+45,110,141,300,7,7.5
+120,100,130,500,7,7.5
+270,100,131,1729,0,7
+30,159,182,319,5,7.5
+45,149,169,344,0,8
+30,103,139,151,4,8
+120,100,130,500,0,8
+45,100,120,225,8.5,8
+30,151,170,300,0,7
+45,102,136,234,6.5,8
+120,100,157,1000,0,8
+45,129,103,242,5,8
+20,83,107,50,9.5,8
+180,101,127,600,0,7.5
+45,107,137,1200,8,8
+30,90,107,105,7,8
+15,80,100,50,9,8
+20,150,171,127,0,7.5
+20,151,168,229,0,7
+30,95,128,128,8,7.5
+25,152,168,244,0,8
+30,109,131,188,8,7.5
+90,93,124,604,8,8
+20,95,112,77,8,8
+90,90,110,500,8,8
+90,90,100,500,0,8
+90,90,100,500,5,8
+30,92,108,92,8,8
+30,93,128,124,8,8
+180,90,120,800,8,8
+30,90,120,86,7,8
+90,90,120,500,8,8
+210,137,184,1860,0,7.5
+60,102,124,325,0,8
+45,107,124,275,0,8
+15,124,139,124,5,6
+60,108,131,367,0,8
+60,108,151,351,0,8
+60,116,141,443,0,8
+60,97,122,277,0,8
+60,105,125,353,0,8
+60,103,124,332,0,8
+30,112,137,193,0,8
+45,100,120,100,0,7.5
+60,119,169,336,0,8
+60,107,127,344,0,8
+60,111,151,368,0,8
+60,98,122,271,0,8
+60,97,124,275,0,8
+60,109,127,382,0,6
+90,99,125,466,0,7.5
+60,114,151,384,0,12
+60,104,134,342,0,7.5
+60,107,138,357,0,7.5
+60,103,133,335,0,7.5
+60,106,132,327,0,7.5
+60,103,136,339,0,7.5
+20,136,156,189,8.5,7.5
+45,117,143,317,0,8
+45,115,137,318,0,7.5
+45,113,138,308,0,7
+20,141,162,222,0,7.5
+60,108,135,390,0,8
+60,97,127,288,0,8
+45,100,120,250,0,8
+45,122,149,335,0,7.5
+60,136,170,470,8,8
+45,106,126,270,8,8
+60,107,136,400,9.5,7
+60,112,146,361,9,7.5
+30,103,127,185,9,7.5
+60,110,150,409,8,7
+60,106,134,343,8,8.5
+60,109,129,353,8,8
+60,109,138,374,8,6
+30,150,167,275,0,9
+60,105,128,328,9,8
+60,97,131,270,9,8
+60,100,120,270,8,8
+60,114,150,382,0,8
+30,80,120,240,10,7
+30,85,120,250,10,7
+45,90,130,260,8,7
+45,95,130,270,8,7
+45,100,140,280,0,7
+60,105,140,290,7,8
+60,110,145,300,7,8
+60,115,145,310,8,8
+75,120,150,320,0,8
+75,125,150,330,8,8
+kết quả:    https://www.w3schools.com/datascience/img_tryit_lr_least_square.png
+
+#Giải thích:
+   Nhập các mô-đun bạn cần: Pandas, matplotlib và Scipy
+   Cô lập Average_Pulse là x. Cô lập Calorie_burnage là y
+   Nhận các giá trị khóa quan trọng với: độ dốc, chặn, r, p, std_err = stats.linregress(x, y)
+   Tạo một hàm sử dụng giá trị độ dốc và giá trị chặn để trả về một giá trị mới. Giá trị mới này biểu thị vị trí trên trục y mà giá trị x tương ứng sẽ được đặt
+   Chạy từng giá trị của mảng x thông qua hàm. Điều này sẽ tạo ra một mảng mới với các giá trị mới cho trục y: mymodel = list(map(myfunc, x))
+  Vẽ biểu đồ phân tán ban đầu: plt.scatter(x, y)
+  Vẽ đường hồi quy tuyến tính: plt.plot(x, mymodel)
+  Xác định giá trị lớn nhất và nhỏ nhất của trục
+  Gắn nhãn trục: "Average_Pulse" và "Calorie_Burnage"
+
+? Bạn có nghĩ rằng đường thẳng này có thể dự đoán chính xác lượng Calorie_Burnage không ?
+Trả lời:  Chúng tôi sẽ chứng minh rằng chỉ riêng biến Average_Pulse là không đủ để dự đoán chính xác lượng Calorie_Burnage.
+
+*** Data Science - Regression Table(Bảng hồi quy) ***
+- Kết quả đầu ra từ hồi quy tuyến tính có thể được tóm tắt trong bảng hồi quy.
++) Nội dung của bảng bao gồm:
+       Thông tin về mô hình
+       Hệ số của hàm hồi quy tuyến tính
+      Thống kê hồi quy
+      Thống kê các hệ số từ hàm hồi quy tuyến tính
+      Những thông tin khác mà chúng tôi sẽ không đề cập trong mô-đun này
+
+*** Regression Table with Average_Pulse as Explanatory Variable(Bảng hồi quy với Average_Pulse là biến giải thích) ***
+Hình ảnh như đây:    https://www.w3schools.com/datascience/img_lr_table.png
+
+*** Create a Linear Regression Table in Python(Tạo bảng hồi quy tuyến tinh trong Python) ***
+VÍ DỤ:
+import pandas as pd
+import statsmodels.formula.api as smf
+full_health_data = pd.read_csv("data.csv", header=0, sep=",")
+model = smf.ols("Calorie_Burnage ~ Average_Pulse", data = full_health_data)     #ols là ordinary Least Squares với smf.ols()
+results = model.fit()
+print(results.summary())
+kết quả:     https://www.w3schools.com/datascience/img_lr_table.png
+  
+#Giải thích:
+   Nhập thư viện statsmodels.formula.api dưới dạng smf. Statsmodels là một thư viện thống kê trong Python.
+   Sử dụng bộ dữ liệu full_health_data.
+   Tạo mô hình dựa trên Ordinary Least Squares với smf.ols(). Lưu ý rằng biến giải thích phải được viết trước trong dấu ngoặc đơn. Sử dụng tập dữ liệu full_health_data.
+   Bằng cách gọi .fit(), bạn sẽ có được biến results. Biến này chứa rất nhiều thông tin về mô hình hồi quy.
+   Gọi summary() để lấy bảng kết quả hồi quy tuyến tính.
+
+*** Data Science - Regression Table - Info ***
+*** The"Information Part" in Regression Table(Phần thông tin trong bảng hồi quy) ***
+Như hình ảnh bên:   https://www.w3schools.com/datascience/img_lr_table_info.png
+#Giải thích:
+    Biến Dep.: là viết tắt của "Dependent Variable(biến phụ thuộc)" . Calorie_Burnage ở đây là biến phụ thuộc. Biến phụ thuộc ở đây được cho là được giải thích bởi Average_Pulse.
+    Mô hình: OLS là viết tắt của Ordinary Least Squares. Đây là loại mô hình sử dụng phương pháp Least Square.
+    Ngày: và Giờ: hiển thị ngày và giờ đầu ra được tính toán bằng Python.
+
+*** Data Science - Regression Table - Coefficients(Hệ số) ***
+*** The "Coefficients  Part" in Regression Table ***
+Như hình ảnh bên:   https://www.w3schools.com/datascience/img_lr_table_coeff.png
+ - Coef là viết tắt của Coefficients (Hệ số). Đây là kết quả đầu ra của hàm hồi quy tuyến tính.
++) Hàm hồi quy tuyến tính có thể được viết lại theo phương pháp toán học như sau:
+       Calorie_Burnage = 0.3296 * Average_Pulse + 346.8662
+ - Những con số này có nghĩa là:
+     Nếu Average_Pulse tăng thêm 1, Calorie_Burnage tăng thêm 0,3296 (hoặc 0,3 làm tròn)
+     Nếu Average_Pulse = 0, Calorie_Burnage bằng 346,8662 (hoặc 346,9 làm tròn).
+     Hãy nhớ rằng giá trị chặn được sử dụng để điều chỉnh độ chính xác dự đoán của mô hình!
+ 
+*** Define the Linear Regression Function in Python(Định nghĩa hàm hồi quy tuyến tính trong Python) ***
+- Xác định hàm hồi quy tuyến tính trong Python để thực hiện dự đoán.
+? Calorie_Burnage là gì nếu Average_Pulse là: 120, 130, 150, 180 ? 
+VÍ DU:
+def Predict_Calorie_Burnage(Average_Pulse):
+  return(0.3296 * Average_Pulse + 346.8662)
+#Try some different values:
+print(Predict_Calorie_Burnage(120))
+print(Predict_Calorie_Burnage(130))
+print(Predict_Calorie_Burnage(150))
+print(Predict_Calorie_Burnage(180))
+kết quả:   386.4182
+                389.7142
+                396.3062
+                406.1942
+
+*** Data Science - Regression Table: P-Value(Giá trị P) ***
+*** The "Statistics of the Coefficients Part"(Thống kê các hệ số phần) in Regression Table ***
+Hình ảnh bên đây:    https://www.w3schools.com/datascience/img_lr_table_coeff_stat.png
+- Bây giờ, chúng ta muốn kiểm tra xem các hệ số từ hàm hồi quy tuyến tính có tác động đáng kể đến biến phụ thuộc (Calorie_Burnage) hay khô
+- Điều này có nghĩa là chúng ta muốn chứng minh rằng tồn tại mối quan hệ giữa Average_Pulse và Calorie_Burnage, bằng cách sử dụng các bài kiểm tra thống kê.
++) Có bốn thành phần giải thích số liệu thống kê của các hệ số:
+      std err là viết tắt của Standard Error
+       t là "t-value(giá trị t)" của các hệ số
+       P>|t| được gọi là "P-value(giá trị P)"
+       [0,025 0,975] biểu thị khoảng tin cậy của các hệ số
+
+*** P-Value ***
+- Giá trị P là một con số thống kê để kết luận xem có mối quan hệ nào giữa Average_Pulse và Calorie_Burnage hay không.
+- Chúng tôi kiểm tra xem giá trị thực của hệ số có bằng không (không có mối quan hệ) hay không. Kiểm tra thống kê cho điều này được gọi là Kiểm tra giả thuyết.
+     Giá trị P thấp (< 0,05) có nghĩa là hệ số có khả năng không bằng 0.
+     Giá trị P cao (> 0,05) có nghĩa là chúng ta không thể kết luận rằng biến giải thích ảnh hưởng đến biến phụ thuộc (ở đây: nếu Average_Pulse ảnh hưởng đến Calorie_Burnage).
+     Giá trị P cao còn được gọi là giá trị P không đáng kể.
+
+*** Hypothesis Testing(Kiểm tra giả thuyết) ***
+- Kiểm định giả thuyết là một thủ tục thống kê để kiểm tra xem kết quả của bạn có hợp lệ hay không.
+Trong ví dụ này, chúng tôi đang kiểm tra xem hệ số thực của Average_Pulse và giá trị chặn có bằng 0 hay không.
+   +) Kiểm định giả thuyết có hai câu:  Giả thuyết không và giả thuyết thay thế.
+           Giả thuyết không có thể được viết ngắn gọn là H0
+           Giả thuyết thay thế có thể được viết ngắn gọn là HA
++) Viết theo dạng toán học:
+H0: Average_Pulse = 0
+HA: Average_Pulse ≠ 0
+H0: Intercept = 0
+HA: Intercept ≠ 0
+
+Dấu ≠ có nghĩa là "không bằng"
+ 
+*** Hypothesis Testing(Kiểm định giả thuyết)  and P-Value ***
+-     Giả thuyết không    có thể bị bác bỏ hoặc không.
+- Nếu chúng ta bác bỏ giả thuyết vô hiệu, chúng ta kết luận rằng có mối quan hệ giữa Average_Pulse và Calorie_Burnage. Giá trị P được sử dụng cho kết luận này.
+- Ngưỡng chung của giá trị P là 0,05.
+
+! NOTE !: Giá trị P bằng 0,05 có nghĩa là 5% số lần, chúng ta sẽ bác bỏ sai giả thuyết vô hiệu. Điều đó có nghĩa là chúng ta chấp nhận rằng 5% số lần, chúng ta có thể đã kết luận sai về một mối quan hệ. Nếu giá trị P thấp hơn 0,05, chúng ta có thể bác bỏ giả thuyết không và kết luận rằng tồn tại mối quan hệ giữa các biến. Tuy nhiên, giá trị P của Average_Pulse là 0,824. Vì vậy, chúng ta không thể kết luận mối quan hệ giữa Average_Pulse và Calorie_Burnage.
+Điều này có nghĩa là có 82,4% khả năng hệ số thực của Average_Pulse bằng 0. Giá trị cắt được sử dụng để điều chỉnh khả năng dự đoán chính xác hơn của hàm hồi quy. Do đó, việc diễn giải giá trị P của giá trị cắt là không phổ biến.
+
+*** Data Science - Regression Table: R-Squared(R-bình phương) ***
+*** R-Squared(R-bình phương) ***
++) R-Squared và R-Squared điều chỉnh mô tả mức độ phù hợp của mô hình hồi quy tuyến tính với các điểm dữ liệu:
+Hình ảnh bên đây:   https://www.w3schools.com/datascience/img_lr_table_r.png
++) Giá trị của R-Squared luôn nằm trong khoảng từ 0 đến 1 (0% đến 100%).
+       Giá trị R-Squared cao có nghĩa là nhiều điểm dữ liệu gần với đường hồi quy tuyến tính.
+       Giá trị R-Squared thấp có nghĩa là đường hồi quy tuyến tính không phù hợp với dữ liệu.
+
+*** Visual Example of a Low R - Squared Value (0.00))Ví dụ trực quan về giá trị R bình phương thấp (0,00)_ ***
+- Mô hình hồi quy của chúng tôi cho thấy giá trị R-bình phương bằng 0, điều này có nghĩa là đường hồi quy tuyến tính không phù hợp với dữ liệu.
+- Điều này có thể được hình dung khi chúng ta vẽ đồ thị hàm hồi quy tuyến tính thông qua các điểm dữ liệu của Average_Pulse và Calorie_Burnage.
+Hình ảnh bên đây:   https://www.w3schools.com/datascience/img_lr_low_r.png 
+
+*** Visual Example of a High R - Squared Value (0.79)(Ví dụ trực quan về giá trị R - Bình phương cao (0,79)) ***
+- Tuy nhiên, nếu chúng ta vẽ Duration và Calorie_Burnage , R-Squared tăng lên. Ở đây, chúng ta thấy rằng các điểm dữ liệu gần với đường hồi quy tuyến tính:
+VÍ DỤ: (tạo ra  2 file  là prog.py và  data.csv):
++) Đối với  prog.py:
+#Three lines to make our compiler able to draw:
+import sys
+import matplotlib
+matplotlib.use('Agg')
+
+import pandas as pd
+import matplotlib.pyplot as plt
+from scipy import stats
+
+full_health_data = pd.read_csv("data.csv", header=0, sep=",")
+x = full_health_data["Duration"]
+y = full_health_data["Calorie_Burnage"]
+slope, intercept, r, p, std_err = stats.linregress(x, y)
+def myfunc(x):
+  return slope * x + intercept
+mymodel = list(map(myfunc, x))
+print(mymodel)
+
+plt.scatter(x, y)
+plt.plot(x, mymodel)
+plt.ylim(ymin=0, ymax=2000)
+plt.xlim(xmin=0, xmax=200)
+plt.xlabel("Duration")
+plt.ylabel("Calorie_Burnage")
+plt.show()
+#Two lines to make our compiler able to draw:
+plt.savefig(sys.stdout.buffer)
+sys.stdout.flush()
++) Đối với file  data.csv:
+Duration,Average_Pulse,Max_Pulse,Calorie_Burnage,Hours_Work,Hours_Sleep
+60,110,130,409,0,8
+60,117,145,479,0,8
+60,103,135,340,8,7.5
+45,109,175,282,8,8
+45,117,148,406,0,6.5
+60,102,127,300,0,7.5
+60,110,136,374,0,7.5
+45,104,134,253,0,9
+30,109,133,195,8,8
+60,98,124,269,7.5,8
+60,103,147,329,8,7
+60,100,120,250,0,5
+60,106,128,345,8.5,7.5
+60,104,132,379,8.5,7.5
+60,98,123,275,9,7
+60,98,120,215,6.5,7
+60,100,120,300,9,8
+45,90,112,180,8,8
+60,103,123,323,8,8
+45,97,125,243,8,7
+60,108,131,364,8,7
+45,100,119,282,0,7
+60,130,101,300,8,7
+45,105,132,246,0,8
+60,102,126,334,8,8
+60,100,120,250,8,7
+60,92,118,241,7,6
+60,103,132,353,9,8.5
+60,100,132,280,3,8
+60,102,129,380,3,8
+60,92,115,243,7.5,8
+60,101,124,299,8.5,7.5
+60,93,113,223,8,7
+60,107,136,361,2,8
+60,114,140,415,9,8.5
+60,100,120,300,8,7
+60,100,120,300,7,6
+45,104,129,266,8,7
+60,98,126,286,7.5,7
+60,100,122,329,8,7
+60,111,138,400,8,8
+60,111,131,397,0,8
+60,99,119,273,8,7
+60,109,153,387,8,7
+45,111,136,300,11,7
+45,108,129,298,5,7
+60,111,139,397,0,8
+60,107,136,380,8.5,8
+80,123,146,643,8.5,8
+60,106,130,263,8,8
+60,118,151,486,7,7
+30,136,175,238,0,7.5
+60,121,146,450,5,8
+60,118,121,413,8,7
+45,115,144,305,5,7
+20,153,172,226,0,8
+45,123,152,321,5,8
+210,108,160,1376,8,8
+160,110,137,1034,8,8
+160,109,135,853,8,8
+45,118,141,341,8,8
+20,110,130,131,0,8
+180,90,130,800,0,8
+150,105,135,873,8,8
+150,107,130,816,3,8
+20,106,136,110,3,8
+300,108,143,1500,0,8
+150,97,129,1115,0,8
+90,100,127,700,0,8
+150,97,127,953,0,8
+45,114,146,304,0,8
+90,98,125,563,0,8
+45,105,134,251,0,8
+45,110,141,300,7,7.5
+120,100,130,500,7,7.5
+270,100,131,1729,0,7
+30,159,182,319,5,7.5
+45,149,169,344,0,8
+30,103,139,151,4,8
+120,100,130,500,0,8
+45,100,120,225,8.5,8
+30,151,170,300,0,7
+45,102,136,234,6.5,8
+120,100,157,1000,0,8
+45,129,103,242,5,8
+20,83,107,50,9.5,8
+180,101,127,600,0,7.5
+45,107,137,1200,8,8
+30,90,107,105,7,8
+15,80,100,50,9,8
+20,150,171,127,0,7.5
+20,151,168,229,0,7
+30,95,128,128,8,7.5
+25,152,168,244,0,8
+30,109,131,188,8,7.5
+90,93,124,604,8,8
+20,95,112,77,8,8
+90,90,110,500,8,8
+90,90,100,500,0,8
+90,90,100,500,5,8
+30,92,108,92,8,8
+30,93,128,124,8,8
+180,90,120,800,8,8
+30,90,120,86,7,8
+90,90,120,500,8,8
+210,137,184,1860,0,7.5
+60,102,124,325,0,8
+45,107,124,275,0,8
+15,124,139,124,5,6
+60,108,131,367,0,8
+60,108,151,351,0,8
+60,116,141,443,0,8
+60,97,122,277,0,8
+60,105,125,353,0,8
+60,103,124,332,0,8
+30,112,137,193,0,8
+45,100,120,100,0,7.5
+60,119,169,336,0,8
+60,107,127,344,0,8
+60,111,151,368,0,8
+60,98,122,271,0,8
+60,97,124,275,0,8
+60,109,127,382,0,6
+90,99,125,466,0,7.5
+60,114,151,384,0,12
+60,104,134,342,0,7.5
+60,107,138,357,0,7.5
+60,103,133,335,0,7.5
+60,106,132,327,0,7.5
+60,103,136,339,0,7.5
+20,136,156,189,8.5,7.5
+45,117,143,317,0,8
+45,115,137,318,0,7.5
+45,113,138,308,0,7
+20,141,162,222,0,7.5
+60,108,135,390,0,8
+60,97,127,288,0,8
+45,100,120,250,0,8
+45,122,149,335,0,7.5
+60,136,170,470,8,8
+45,106,126,270,8,8
+60,107,136,400,9.5,7
+60,112,146,361,9,7.5
+30,103,127,185,9,7.5
+60,110,150,409,8,7
+60,106,134,343,8,8.5
+60,109,129,353,8,8
+60,109,138,374,8,6
+30,150,167,275,0,9
+60,105,128,328,9,8
+60,97,131,270,9,8
+60,100,120,270,8,8
+60,114,150,382,0,8
+30,80,120,240,10,7
+30,85,120,250,10,7
+45,90,130,260,8,7
+45,95,130,270,8,7
+45,100,140,280,0,7
+60,105,140,290,7,8
+60,110,145,300,7,8
+60,115,145,310,8,8
+75,120,150,320,0,8
+75,125,150,330,8,8
+kết quả:    https://www.w3schools.com/datascience/img_tryit_lr_dur_cal.png
+                 [358.21715450527273, 358.21715450527273, 358.21715450527273, 273.2544822252611, 273.2544822252611, 358.21715450527273, 358.21715450527273, 273.2544822252611, 188.29180994524933, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 273.2544822252611, 358.21715450527273, 273.2544822252611, 358.21715450527273, 273.2544822252611, 358.21715450527273, 273.2544822252611, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 273.2544822252611, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 273.2544822252611, 273.2544822252611, 358.21715450527273, 358.21715450527273, 471.50071754528835, 358.21715450527273, 358.21715450527273, 188.29180994524933, 358.21715450527273, 358.21715450527273, 273.2544822252611, 131.65002842524154, 273.2544822252611, 1207.8438773053897, 924.6349697053508, 924.6349697053508, 273.2544822252611, 131.65002842524154, 1037.9185327453665, 867.9931881853431, 867.9931881853431, 131.65002842524154, 1717.6199109854601, 867.9931881853431, 528.1424990652962, 867.9931881853431, 273.2544822252611, 528.1424990652962, 273.2544822252611, 273.2544822252611, 698.0678436253195, 1547.6945664254365, 188.29180994524933, 273.2544822252611, 188.29180994524933, 698.0678436253195, 273.2544822252611, 188.29180994524933, 273.2544822252611, 698.0678436253195, 273.2544822252611, 131.65002842524154, 1037.9185327453665, 273.2544822252611, 188.29180994524933, 103.32913766523762, 131.65002842524154, 131.65002842524154, 188.29180994524933, 159.97091918524544, 188.29180994524933, 528.1424990652962, 131.65002842524154, 528.1424990652962, 528.1424990652962, 528.1424990652962, 188.29180994524933, 188.29180994524933, 1037.9185327453665, 188.29180994524933, 528.1424990652962, 1207.8438773053897, 358.21715450527273, 273.2544822252611, 103.32913766523762, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 188.29180994524933, 273.2544822252611, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 528.1424990652962, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 131.65002842524154, 273.2544822252611, 273.2544822252611, 273.2544822252611, 131.65002842524154, 358.21715450527273, 358.21715450527273, 273.2544822252611, 273.2544822252611, 358.21715450527273, 273.2544822252611, 358.21715450527273, 358.21715450527273, 188.29180994524933, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 188.29180994524933, 358.21715450527273, 358.21715450527273, 358.21715450527273, 358.21715450527273, 188.29180994524933, 188.29180994524933, 273.2544822252611, 273.2544822252611, 273.2544822252611, 358.21715450527273, 358.21715450527273, 358.21715450527273, 443.1798267852845, 443.1798267852845]
+
+*** Summary - Predicting Calorie_Burnage with Average_Pulse(Tóm tắt - Dự đoán lượng calo bị đốt cháy bằng Average_Pulse) ***
+? Làm thế nào chúng ta có thể tóm tắt hàm hồi quy tuyến tính với Average_Pulse là biến giải thích?
+     - Hệ số 0,3296, nghĩa là Average_Pulse có tác động rất nhỏ đến Calorie_Burnage.
+     - Giá trị P cao (0,824), nghĩa là chúng ta không thể kết luận mối quan hệ giữa Average_Pulse và Calorie_Burnage.
+     - Giá trị R-bình phương bằng 0, điều này có nghĩa là đường hồi quy tuyến tính không phù hợp với dữ liệu.
+
+*** Data Science - Linear Regression Case(Trường hợp hồi quy tuyến tính) ***
+*** Case: Use Duration + Average_Pulse to Predict Calorie_Burnage(Trường hợp: Sử dụng Thời lượng + Nhịp tim trung bình để Dự đoán Lượng calo bị đốt cháy) ***
+VÍ DỤ:
+import pandas as pd
+import statsmodel.formula.api as smf
+full_health_data = pd.read_csv("data.csv", header=0, sep=",")
+model = smf.ols("Calorie_Burnage ~ Average_Pulse + Duration", data = full_health_data)
+results = model.fit()
+print(results.summary())
+kết quả:   https://www.w3schools.com/datascience/img_lr_table_case.png
+
+#Giải thích:
+   Nhập thư viện statsmodels.formula.api dưới dạng smf. Statsmodels là một thư viện thống kê trong Python.
+   Sử dụng bộ dữ liệu full_health_data. 
+   Tạo mô hình dựa trên Ordinary Least Squares với smf.ols(). Lưu ý rằng biến giải thích phải được viết trước trong dấu ngoặc đơn. Sử dụng tập dữ liệu full_health_data.
+   Bằng cách gọi .fit(), bạn sẽ có được biến results. Biến này chứa rất nhiều thông tin về mô hình hồi quy.
+   Gọi summary() để lấy bảng kết quả hồi quy tuyến tính.
+
++) Hàm hồi quy tuyến tính có thể được viết lại theo phương pháp toán học như sau:
+Calorie_Burnage = Average_Pulse * 3.1695 + Duration * 5.8424 - 334.5194
++) Làm tròn đến hai chữ số thập phân:
+Calorie_Burnage = Average_Pulse * 3.17 + Duration * 5.84 - 334.52
+
+*** Define the Linear Regression Function in Python(Định nghĩa hàm hồi quy tuyến tính trong Python) ***
+- Xác định hàm hồi quy tuyến tính trong Python để thực hiện dự đoán.
++) Calorie_Burnage là gì nếu:
+      Nhịp tim trung bình là 110 và thời gian tập luyện là 60 phút?
+      Nhịp tim trung bình là 140 và thời gian tập luyện là 45 phút?
+      Nhịp tim trung bình là 175 và thời gian tập luyện là 20 phút?
+VÍ DỤ: 
+def Predict_Calorie_Burnage(Average_Pulse, Duration):
+  return(3.1695 * Average_Pulse + 5.8424 * Duration - 334.5194)
+print(Predict_Calorie_Burnage(110, 60))
+print(Predict_Calorie_Burnage(140, 45))
+print(Predict_Calorie_Burnage(175, 20))
+kết quả:   364.66960000000006
+                372.1185999999999
+                336.99109999999996
+
+Câu trả lời: 
+  Nhịp tim trung bình là 110 và thời gian tập luyện là 60 phút = 365 calo
+  Nhịp tim trung bình là 140 và thời gian tập luyện là 45 phút = 372 Calo
+  Nhịp tim trung bình là 175 và thời gian tập luyện là 20 phút = 337 Calo
+
+*** Access the Coefficients(Truy cập các hệ số) ***
++) Hãy xem các hệ số:
+     Calorie_Burnage tăng lên 3,17 nếu Average_Pulse tăng thêm một.
+     Calorie_Burnage tăng 5,84 nếu Duration tăng thêm một.
+
+*** Access the P-Value(Truy cập giá trị P) ***
++) Hãy xem giá trị P cho mỗi hệ số.
+      Giá trị P là 0,00 đối với Average_Pulse, Duration và Intercept.
+      Giá trị P có ý nghĩa thống kê đối với tất cả các biến vì nó nhỏ hơn 0,05.
+==> Vì vậy, ở đây chúng ta có thể kết luận rằng Average_Pulse và Duration có mối quan hệ với Calorie_Burnage.
+
+*** Adjusted(Điều chỉnh) R-Squared ***
+- Sẽ có vấn đề với R bình phương nếu chúng ta có nhiều hơn một biến giải thích.
+- R bình phương gần như luôn tăng nếu chúng ta thêm nhiều biến hơn và sẽ không bao giờ giảm.
+- Điều này là do chúng ta đang thêm nhiều điểm dữ liệu hơn xung quanh hàm hồi quy tuyến tính.
+- Nếu chúng ta thêm các biến ngẫu nhiên không ảnh hưởng đến Calorie_Burnage, chúng ta có nguy cơ kết luận sai rằng hàm hồi quy tuyến tính phù hợp. R-squared điều chỉnh sẽ điều chỉnh cho vấn đề này.
+=> Do đó, tốt hơn là nên xem xét giá trị R bình phương đã điều chỉnh nếu chúng ta có nhiều hơn một biến giải thích.
+- R bình phương điều chỉnh là 0,814.
+- Giá trị của R-Squared luôn nằm trong khoảng từ 0 đến 1 (0% đến 100%).
+      Giá trị R-Squared cao có nghĩa là nhiều điểm dữ liệu gần với đường hồi quy tuyến tính.
+      Giá trị R-Squared thấp có nghĩa là đường hồi quy tuyến tính không phù hợp với dữ liệu.
+==>  Kết luận:   Mô hình phù hợp với điểm dữ liệu!
+
+_______________________________________________________________________________________________________Hết________________________________________________________________________________________________________________________________________
+
+
